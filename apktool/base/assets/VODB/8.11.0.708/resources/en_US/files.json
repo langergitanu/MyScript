@@ -1,0 +1,20 @@
+{
+  "formatVersion": "1.0",
+  "files": [
+    {
+    "relativePath": "en_US-ak-cur.res",
+    "md5": "ff9ab655c2388a56ad31faf2f3757151",
+    "size": "3783049"
+    },
+    {
+    "relativePath": "en_US-lk-text.res",
+    "md5": "b30843539c433ff06c16edccbc82a604",
+    "size": "9579232"
+    },
+    {
+    "relativePath": "../../conf/en_US.conf",
+    "md5": "effb89fa38429daf95bce7e811624f47",
+    "size": "284"
+    }
+  ]
+}

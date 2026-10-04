@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:enterFadeDuration="@android:integer/config_mediumAnimTime" android:exitFadeDuration="@android:integer/config_mediumAnimTime"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:tint="?colorPrimary" android:shape="oval">
+            <solid android:color="#ff000000" />
+            <size android:height="@dimen/pager_indicator_size" android:width="@dimen/pager_indicator_size" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:tint="?colorPrimary" android:shape="oval">
+            <stroke android:width="0.5dp" android:color="#61000000" />
+            <solid android:color="#00000000" />
+            <size android:height="@dimen/pager_indicator_size" android:width="@dimen/pager_indicator_size" />
+        </shape>
+    </item>
+    <item>
+        <shape android:tint="?colorPrimary" android:shape="oval">
+            <solid android:color="#61000000" />
+            <size android:height="@dimen/pager_indicator_size" android:width="@dimen/pager_indicator_size" />
+        </shape>
+    </item>
+</selector>

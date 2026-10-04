@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.survicate.surveys.presentation.matrix.micro.MicroSurveyPointMatrixView android:id="@id/fragment_micro_survey_point_matrix_view" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

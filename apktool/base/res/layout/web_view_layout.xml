@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/web_view_progress_bar_overlap" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="?android:progressBarStyleLarge" />
+    <LinearLayout android:orientation="vertical" android:id="@id/web_view_content" android:focusable="true" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:background="?android:colorBackground" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:elevation="4.0dp" style="?toolbarStyle">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/activity_web_view_chrome" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/web_view_button_back" android:background="?selectableItemBackground" android:padding="12.0dp" android:focusable="true" android:clickable="true" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_arrow_back" />
+                <ImageView android:id="@id/web_view_button_forward" android:background="?selectableItemBackground" android:padding="12.0dp" android:focusable="true" android:clickable="true" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_arrow_forward" android:layout_toRightOf="@id/web_view_button_back" />
+                <ImageView android:id="@id/web_view_button_refresh" android:background="?selectableItemBackground" android:padding="12.0dp" android:focusable="true" android:clickable="true" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_refresh" android:layout_toRightOf="@id/web_view_button_forward" />
+                <ImageView android:id="@id/web_view_button_close" android:background="?selectableItemBackground" android:padding="12.0dp" android:focusable="true" android:clickable="true" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_close" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:layout_gravity="center" android:id="@id/web_view_web_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/web_view_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="?android:progressBarStyleLarge" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

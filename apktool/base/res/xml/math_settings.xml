@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_solver_label" android:key="@string/pref_solver_key" android:defaultValue="@bool/pref_enable_solver_default" android:summaryOn="@string/pref_enable_solver_true" android:summaryOff="@string/pref_enable_solver_false" app:iconSpaceReserved="false" />
+    <ListPreference android:enabled="true" android:entries="@array/pref_approximation_options_label" android:title="@string/pref_math_solver_approximation_label" android:key="@string/pref_math_solver_approximation_key" android:dependency="@string/pref_solver_key" android:defaultValue="@string/pref_math_solver_approximation_truncated" android:entryValues="@array/pref_approximation_values" app:iconSpaceReserved="false" />
+    <ListPreference android:enabled="true" android:entries="@array/pref_angle_unit_options_label" android:title="@string/pref_math_solver_angle_unit_label" android:key="@string/pref_math_solver_angle_unit_key" android:dependency="@string/pref_solver_key" android:defaultValue="@string/pref_math_solver_angle_unit_degree" android:entryValues="@array/pref_angle_unit_values" app:iconSpaceReserved="false" />
+</PreferenceScreen>

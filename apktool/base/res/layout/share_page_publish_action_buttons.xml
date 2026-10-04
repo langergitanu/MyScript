@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:id="@id/share_page_share_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_page_share" app:layout_constraintBottom_toTopOf="@id/share_page_unpublish_button" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_chainStyle="spread_inside" app:layout_constraintTop_toBottomOf="@id/share_page_buttons" style="?android:buttonBarButtonStyle" />
+    <Button android:textColor="?colorError" android:id="@id/share_page_unpublish_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_page_unpublish" app:layout_constraintBottom_toTopOf="@id/share_page_publish_button" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/share_page_share_button" style="?android:buttonBarButtonStyle" />
+    <Button android:id="@id/share_page_publish_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_page_publish" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/share_page_unpublish_button" style="?android:buttonBarButtonStyle" />
+</merge>

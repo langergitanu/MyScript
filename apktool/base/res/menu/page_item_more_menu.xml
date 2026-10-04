@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_duplicate" android:id="@id/page_item_more_menu_duplicate_page" android:title="@string/page_menu_duplicate" />
+    <item android:icon="@drawable/ic_text_edit" android:id="@id/page_item_more_menu_rename_page" android:title="@string/app_more_menu_rename_page" />
+    <item android:icon="@drawable/ic_ios_share" android:id="@id/page_item_more_menu_export" android:title="@string/app_more_menu_export" />
+    <item android:icon="@drawable/ic_folder_move" android:id="@id/page_item_more_menu_move" android:title="@string/app_more_menu_move" />
+    <item android:icon="@drawable/ic_delete_outline" android:id="@id/page_item_more_menu_delete" android:title="@string/app_more_menu_delete" />
+</menu>

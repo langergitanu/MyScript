@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/cross_sell_illustration" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <ImageView android:layout_width="match_parent" android:layout_height="150.0dp" android:src="@drawable/fancy_whats_new_top_gradient" />
+    <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="200.0dp" android:src="@drawable/fancy_whats_new_bottom_gradient" />
+    <com.google.android.material.appbar.AppBarLayout android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/cross_sell_toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:menu="@menu/whats_new_dialog_actions" app:title="@string/cross_sell_dialog_title1" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:padding="?dialogPreferredPadding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceHeadline6" android:id="@id/cross_sell_title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@id/cross_sell_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="150.0dp" android:lineSpacingExtra="4.0dp" android:layout_marginVertical="16.0dp" android:justificationMode="inter_word" />
+        <LinearLayout android:layout_gravity="end" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton android:id="@id/cross_sell_cta" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?buttonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

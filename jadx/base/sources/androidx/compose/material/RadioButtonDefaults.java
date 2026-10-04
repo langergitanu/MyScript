@@ -1,0 +1,44 @@
+package androidx.compose.material;
+
+import androidx.compose.p004ui.graphics.Color;
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import androidx.media3.exoplayer.RendererCapabilities;
+import kotlin.Metadata;
+
+/* JADX INFO: compiled from: RadioButton.kt */
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(m1598d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J-\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u00072\b\b\u0002\u0010\t\u001a\u00020\u0007H\u0007¢\u0006\u0004\b\n\u0010\u000b¨\u0006\f"}, m1599d2 = {"Landroidx/compose/material/RadioButtonDefaults;", "", "<init>", "()V", "colors", "Landroidx/compose/material/RadioButtonColors;", "selectedColor", "Landroidx/compose/ui/graphics/Color;", "unselectedColor", "disabledColor", "colors-RGew2ao", "(JJJLandroidx/compose/runtime/Composer;II)Landroidx/compose/material/RadioButtonColors;", "material"}, m1600k = 1, m1601mv = {2, 1, 0}, m1603xi = 48)
+public final class RadioButtonDefaults {
+    public static final int $stable = 0;
+    public static final RadioButtonDefaults INSTANCE = new RadioButtonDefaults();
+
+    private RadioButtonDefaults() {
+    }
+
+    /* JADX INFO: renamed from: colors-RGew2ao, reason: not valid java name */
+    public final RadioButtonColors m4379colorsRGew2ao(long j, long j2, long j3, Composer composer, int i, int i2) {
+        ComposerKt.sourceInformationMarkerStart(composer, 1370708026, "C(colors)N(selectedColor:c#ui.graphics.Color,unselectedColor:c#ui.graphics.Color,disabledColor:c#ui.graphics.Color)158@6429L6,159@6494L6,160@6576L6,160@6619L8,162@6672L151:RadioButton.kt#jmzs0o");
+        long jM4205getSecondary0d7_KjU = (i2 & 1) != 0 ? MaterialTheme.INSTANCE.getColors(composer, 6).m4205getSecondary0d7_KjU() : j;
+        long jM8147copywmQWz5c$default = (i2 & 2) != 0 ? Color.m8147copywmQWz5c$default(MaterialTheme.INSTANCE.getColors(composer, 6).m4202getOnSurface0d7_KjU(), 0.6f, 0.0f, 0.0f, 0.0f, 14, null) : j2;
+        long jM8147copywmQWz5c$default2 = (i2 & 4) != 0 ? Color.m8147copywmQWz5c$default(MaterialTheme.INSTANCE.getColors(composer, 6).m4202getOnSurface0d7_KjU(), ContentAlpha.INSTANCE.getDisabled(composer, 6), 0.0f, 0.0f, 0.0f, 14, null) : j3;
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(1370708026, i, -1, "androidx.compose.material.RadioButtonDefaults.colors (RadioButton.kt:161)");
+        }
+        ComposerKt.sourceInformationMarkerStart(composer, -1304537135, "CC(remember):RadioButton.kt#9igjgp");
+        boolean z = ((((i & 14) ^ 6) > 4 && composer.changed(jM4205getSecondary0d7_KjU)) || (i & 6) == 4) | ((((i & 112) ^ 48) > 32 && composer.changed(jM8147copywmQWz5c$default)) || (i & 48) == 32) | ((((i & 896) ^ RendererCapabilities.DECODER_SUPPORT_MASK) > 256 && composer.changed(jM8147copywmQWz5c$default2)) || (i & RendererCapabilities.DECODER_SUPPORT_MASK) == 256);
+        Object objRememberedValue = composer.rememberedValue();
+        if (z || objRememberedValue == Composer.INSTANCE.getEmpty()) {
+            DefaultRadioButtonColors defaultRadioButtonColors = new DefaultRadioButtonColors(jM4205getSecondary0d7_KjU, jM8147copywmQWz5c$default, jM8147copywmQWz5c$default2, null);
+            composer.updateRememberedValue(defaultRadioButtonColors);
+            objRememberedValue = defaultRadioButtonColors;
+        }
+        DefaultRadioButtonColors defaultRadioButtonColors2 = (DefaultRadioButtonColors) objRememberedValue;
+        ComposerKt.sourceInformationMarkerEnd(composer);
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        ComposerKt.sourceInformationMarkerEnd(composer);
+        return defaultRadioButtonColors2;
+    }
+}

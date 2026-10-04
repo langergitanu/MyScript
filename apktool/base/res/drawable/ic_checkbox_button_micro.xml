@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:drawable="@null" android:left="@dimen/survicate_micro_question_multiple_checkbox_padding" android:top="@dimen/survicate_micro_question_multiple_checkbox_padding" android:right="@dimen/survicate_micro_question_multiple_checkbox_padding" android:bottom="@dimen/survicate_micro_question_multiple_checkbox_padding" />
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:left="@dimen/survicate_micro_question_multiple_checkbox_padding" android:top="@dimen/survicate_micro_question_multiple_checkbox_padding" android:right="@dimen/survicate_micro_question_multiple_checkbox_padding" android:bottom="@dimen/survicate_micro_question_multiple_checkbox_padding">
+                <shape android:shape="rectangle">
+                    <stroke android:width="@dimen/survicate_micro_question_multiple_border_width" android:color="#000000" />
+                    <corners android:radius="@dimen/survicate_micro_question_multiple_border_radius" />
+                    <size android:height="@dimen/survicate_micro_question_multiple_size" android:width="@dimen/survicate_micro_question_multiple_size" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

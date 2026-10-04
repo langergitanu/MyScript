@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_delete" android:id="@id/color_picker_delete_action" android:title="@string/color_picker_delete" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_color_duplicate" android:id="@id/color_picker_duplicate_action" android:title="@string/color_picker_duplicate" app:showAsAction="ifRoom" />
+</menu>

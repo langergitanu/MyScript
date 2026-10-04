@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="?colorControlHighlight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape android:shape="oval">
+            <solid android:color="?colorBackgroundFloating" />
+            <size android:height="@dimen/fab_menu_icon_width" android:width="@dimen/fab_menu_icon_width" />
+        </shape>
+    </item>
+</ripple>

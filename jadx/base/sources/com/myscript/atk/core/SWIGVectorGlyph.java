@@ -1,0 +1,127 @@
+package com.myscript.atk.core;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
+/* JADX INFO: loaded from: classes4.dex */
+public class SWIGVectorGlyph extends ArrayList<Glyph> {
+    private static final long serialVersionUID = 1;
+    protected boolean swigCMemOwn;
+    private transient long swigCPtr;
+
+    public SWIGVectorGlyph(long j, boolean z) {
+        this.swigCMemOwn = z;
+        this.swigCPtr = j;
+    }
+
+    public static long getCPtr(SWIGVectorGlyph sWIGVectorGlyph) {
+        if (sWIGVectorGlyph == null) {
+            return 0L;
+        }
+        return sWIGVectorGlyph.swigCPtr;
+    }
+
+    public SWIGVectorGlyph(Iterable<Glyph> iterable) {
+        this(ATKCoreJNI.new_SWIGVectorGlyph(), true);
+        Iterator<Glyph> it = iterable.iterator();
+        while (it.hasNext()) {
+            push_back(it.next());
+        }
+    }
+
+    @Override // java.util.ArrayList, java.util.AbstractCollection, java.util.Collection, java.util.List
+    public boolean isEmpty() {
+        return size() == 0;
+    }
+
+    @Override // java.util.ArrayList, java.util.AbstractList, java.util.List
+    public Glyph get(int i) {
+        return m1049at(i);
+    }
+
+    @Override // java.util.ArrayList, java.util.AbstractCollection, java.util.Collection, java.util.List
+    public boolean contains(Object obj) {
+        return indexOf(obj) >= 0;
+    }
+
+    @Override // java.util.ArrayList, java.util.AbstractList, java.util.List
+    public int indexOf(Object obj) {
+        int size = size();
+        int i = 0;
+        if (obj == null) {
+            while (i < size) {
+                if (get(i) == null) {
+                    return i;
+                }
+                i++;
+            }
+            return -1;
+        }
+        while (i < size) {
+            if (obj.equals(get(i))) {
+                return i;
+            }
+            i++;
+        }
+        return -1;
+    }
+
+    @Override // java.util.ArrayList, java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.List
+    public Iterator<Glyph> iterator() {
+        return new Itr();
+    }
+
+    private class Itr implements Iterator<Glyph> {
+        int cursor;
+
+        private Itr() {
+        }
+
+        @Override // java.util.Iterator
+        public boolean hasNext() {
+            return this.cursor != SWIGVectorGlyph.this.size();
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // java.util.Iterator
+        public Glyph next() {
+            if (this.cursor >= SWIGVectorGlyph.this.size()) {
+                throw new NoSuchElementException();
+            }
+            SWIGVectorGlyph sWIGVectorGlyph = SWIGVectorGlyph.this;
+            int i = this.cursor;
+            this.cursor = i + 1;
+            return sWIGVectorGlyph.get(i);
+        }
+
+        @Override // java.util.Iterator
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
+    }
+
+    public synchronized void delete() {
+        if (this.swigCPtr != 0) {
+            if (this.swigCMemOwn) {
+                this.swigCMemOwn = false;
+                throw new UnsupportedOperationException("C++ destructor does not have public access");
+            }
+            this.swigCPtr = 0L;
+        }
+    }
+
+    public void push_back(Glyph glyph) {
+        ATKCoreJNI.SWIGVectorGlyph_push_back(this.swigCPtr, this, Glyph.getCPtr(glyph), glyph);
+    }
+
+    @Override // java.util.ArrayList, java.util.AbstractCollection, java.util.Collection, java.util.List
+    public int size() {
+        return ATKCoreJNI.SWIGVectorGlyph_size(this.swigCPtr, this);
+    }
+
+    /* JADX INFO: renamed from: at */
+    public Glyph m1049at(int i) {
+        return new Glyph(ATKCoreJNI.SWIGVectorGlyph_at(this.swigCPtr, this, i), true);
+    }
+}

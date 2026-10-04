@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/dms_rmc_fragment_coordinator" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="?android:textColorSecondary" android:id="@id/dms_rmc_fragment_language_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:drawablePadding="16.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+        <FrameLayout android:id="@id/dms_rmc_fragment_language_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,29 @@
+package androidx.compose.p004ui.input.nestedscroll;
+
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+
+/* JADX INFO: compiled from: NestedScrollModifier.kt */
+/* JADX INFO: loaded from: classes2.dex */
+@Metadata(m1600k = 3, m1601mv = {2, 1, 0}, m1603xi = 48)
+@DebugMetadata(m1608c = "androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher", m1609f = "NestedScrollModifier.kt", m1610i = {}, m1611l = {222, 224}, m1612m = "dispatchPostFling-RZ2iAVY", m1613n = {}, m1615s = {}, m1616v = 1)
+final class NestedScrollDispatcher$dispatchPostFling$1 extends ContinuationImpl {
+    int label;
+    /* synthetic */ Object result;
+    final /* synthetic */ NestedScrollDispatcher this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    NestedScrollDispatcher$dispatchPostFling$1(NestedScrollDispatcher nestedScrollDispatcher, Continuation<? super NestedScrollDispatcher$dispatchPostFling$1> continuation) {
+        super(continuation);
+        this.this$0 = nestedScrollDispatcher;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        this.result = obj;
+        this.label |= Integer.MIN_VALUE;
+        return this.this$0.m9342dispatchPostFlingRZ2iAVY(0L, 0L, this);
+    }
+}

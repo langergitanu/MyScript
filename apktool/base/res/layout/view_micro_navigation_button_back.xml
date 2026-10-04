@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.Survicate.Button.Back.Micro"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/view_micro_navigation_button_back_icon" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/survicate_micro_ic_chevron" android:importantForAccessibility="no" />
+    <TextView android:textSize="@dimen/survicate_micro_button_text_size" android:gravity="center" android:id="@id/view_micro_navigation_button_back_text" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/survicate_navigation_button_back" android:textAlignment="center" android:layout_marginStart="@dimen/survicate_micro_space_xxs" />
+</LinearLayout>

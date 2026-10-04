@@ -1,0 +1,115 @@
+package com.myscript.nebo.editing.impl;
+
+import android.util.SparseIntArray;
+import com.myscript.atk.p021ui.ActionMenuEntry;
+import com.myscript.nebo.editing.C6421R;
+import kotlin.Metadata;
+
+/* JADX INFO: compiled from: ActionMenuMapping.kt */
+/* JADX INFO: loaded from: classes7.dex */
+@Metadata(m1598d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\"\u0010\u0010\u0000\u001a\u00020\u00018\u0006X\u0087\u0004¢\u0006\u0002\n\u0000\"\u0010\u0010\u0002\u001a\u00020\u00018\u0006X\u0087\u0004¢\u0006\u0002\n\u0000¨\u0006\u0003"}, m1599d2 = {"ACTION_MENU_IDS", "Landroid/util/SparseIntArray;", "ACTION_MENU_LABELS", "editing_release"}, m1600k = 2, m1601mv = {2, 3, 0}, m1603xi = 48)
+public final class ActionMenuMapping {
+    public static final SparseIntArray ACTION_MENU_IDS;
+    public static final SparseIntArray ACTION_MENU_LABELS;
+
+    static {
+        SparseIntArray sparseIntArray = new SparseIntArray();
+        sparseIntArray.put(ActionMenuEntry.CREATE_OBJECT.swigValue(), C6421R.id.editing_action_menu_create_object);
+        sparseIntArray.put(ActionMenuEntry.CREATE_SECTION.swigValue(), C6421R.id.editing_action_menu_create_section);
+        sparseIntArray.put(ActionMenuEntry.SPACE_MANAGEMENT.swigValue(), C6421R.id.editing_action_menu_manage_space);
+        sparseIntArray.put(ActionMenuEntry.ADD_OBJECT.swigValue(), C6421R.id.editing_action_menu_add_object);
+        sparseIntArray.put(ActionMenuEntry.CUT.swigValue(), C6421R.id.editing_action_menu_cut);
+        sparseIntArray.put(ActionMenuEntry.COPY.swigValue(), C6421R.id.editing_action_menu_copy);
+        sparseIntArray.put(ActionMenuEntry.COPY_AS.swigValue(), C6421R.id.editing_action_menu_copy_as);
+        sparseIntArray.put(ActionMenuEntry.COPY_AS_TEXT.swigValue(), C6421R.id.editing_action_menu_copy_as_text);
+        sparseIntArray.put(ActionMenuEntry.COPY_AS_DRAWING.swigValue(), C6421R.id.editing_action_menu_copy_as_drawing);
+        sparseIntArray.put(ActionMenuEntry.COPY_AS_MATH.swigValue(), C6421R.id.editing_action_menu_copy_as_math);
+        sparseIntArray.put(ActionMenuEntry.COPY_AS_DIAGRAM.swigValue(), C6421R.id.editing_action_menu_copy_as_diagram);
+        sparseIntArray.put(ActionMenuEntry.GROUP_AS.swigValue(), C6421R.id.editing_action_menu_group_as);
+        sparseIntArray.put(ActionMenuEntry.GROUP_AS_TEXT.swigValue(), C6421R.id.editing_action_menu_group_as_text);
+        sparseIntArray.put(ActionMenuEntry.GROUP_AS_DRAWING.swigValue(), C6421R.id.editing_action_menu_group_as_drawing);
+        sparseIntArray.put(ActionMenuEntry.GROUP_AS_MATH.swigValue(), C6421R.id.editing_action_menu_group_as_math);
+        sparseIntArray.put(ActionMenuEntry.GROUP_AS_SHAPE.swigValue(), C6421R.id.editing_action_menu_group_as_shape);
+        sparseIntArray.put(ActionMenuEntry.PASTE.swigValue(), C6421R.id.editing_action_menu_paste);
+        sparseIntArray.put(ActionMenuEntry.REMOVE.swigValue(), C6421R.id.editing_action_menu_delete);
+        sparseIntArray.put(ActionMenuEntry.CONVERT.swigValue(), C6421R.id.editing_action_menu_convert);
+        sparseIntArray.put(ActionMenuEntry.CONVERT_AS.swigValue(), C6421R.id.editing_action_menu_convert_as);
+        sparseIntArray.put(ActionMenuEntry.CONVERT_TEXT.swigValue(), C6421R.id.editing_action_menu_convert_text);
+        sparseIntArray.put(ActionMenuEntry.CONVERT_MATH.swigValue(), C6421R.id.editing_action_menu_convert_math);
+        sparseIntArray.put(ActionMenuEntry.RESIZE.swigValue(), C6421R.id.editing_action_menu_resize);
+        sparseIntArray.put(ActionMenuEntry.STYLES.swigValue(), C6421R.id.editing_action_menu_styles);
+        sparseIntArray.put(ActionMenuEntry.STYLES_BOLD.swigValue(), C6421R.id.editing_action_menu_styles_bold);
+        sparseIntArray.put(ActionMenuEntry.STYLES_UNDERLINE.swigValue(), C6421R.id.editing_action_menu_styles_underline);
+        sparseIntArray.put(ActionMenuEntry.STYLES_DOUBLE_UNDERLINE.swigValue(), C6421R.id.editing_action_menu_styles_double_underline);
+        sparseIntArray.put(ActionMenuEntry.STYLES_STRIKE_THROUGH.swigValue(), C6421R.id.editing_action_menu_styles_strike_through);
+        sparseIntArray.put(ActionMenuEntry.STYLES_HIGHLIGHT.swigValue(), C6421R.id.editing_action_menu_styles_highlight);
+        sparseIntArray.put(ActionMenuEntry.INDENT.swigValue(), C6421R.id.editing_action_menu_indent);
+        sparseIntArray.put(ActionMenuEntry.INDENT_DECREASE.swigValue(), C6421R.id.editing_action_menu_indent_decrease);
+        sparseIntArray.put(ActionMenuEntry.INDENT_INCREASE.swigValue(), C6421R.id.editing_action_menu_indent_increase);
+        sparseIntArray.put(ActionMenuEntry.LIST.swigValue(), C6421R.id.editing_action_menu_list);
+        sparseIntArray.put(ActionMenuEntry.LIST_DOT.swigValue(), C6421R.id.editing_action_menu_list_dot);
+        sparseIntArray.put(ActionMenuEntry.LIST_NUMBER.swigValue(), C6421R.id.editing_action_menu_list_number);
+        sparseIntArray.put(ActionMenuEntry.LIST_CHECK_MARK.swigValue(), C6421R.id.editing_action_menu_list_check_mark);
+        sparseIntArray.put(ActionMenuEntry.LIST_NONE.swigValue(), C6421R.id.editing_action_menu_list_none);
+        sparseIntArray.put(ActionMenuEntry.PDF_PAGE_INSERT.swigValue(), C6421R.id.editing_action_menu_pdf_page_insert);
+        sparseIntArray.put(ActionMenuEntry.PDF_PAGE_REMOVE.swigValue(), C6421R.id.editing_action_menu_pdf_page_remove);
+        sparseIntArray.put(ActionMenuEntry.PDF_PAGE_DUPLICATE.swigValue(), C6421R.id.editing_action_menu_pdf_page_duplicate);
+        sparseIntArray.put(ActionMenuEntry.PDF_PAGE_MOVE_UP.swigValue(), C6421R.id.editing_action_menu_pdf_page_move_up);
+        sparseIntArray.put(ActionMenuEntry.PDF_PAGE_MOVE_DOWN.swigValue(), C6421R.id.editing_action_menu_pdf_page_move_down);
+        sparseIntArray.put(ActionMenuEntry.AI.swigValue(), C6421R.id.editing_action_menu_ai);
+        sparseIntArray.put(ActionMenuEntry.AI_EXPLAIN.swigValue(), C6421R.id.editing_action_menu_ai_explain);
+        sparseIntArray.put(ActionMenuEntry.AI_SUMMARIZE.swigValue(), C6421R.id.editing_action_menu_ai_summarize);
+        sparseIntArray.put(ActionMenuEntry.AI_QUIZ.swigValue(), C6421R.id.editing_action_menu_ai_quiz);
+        sparseIntArray.put(ActionMenuEntry.CROP.swigValue(), C6421R.id.editing_action_menu_crop);
+        ACTION_MENU_IDS = sparseIntArray;
+        SparseIntArray sparseIntArray2 = new SparseIntArray();
+        sparseIntArray2.put(ActionMenuEntry.CREATE_OBJECT.swigValue(), C6421R.string.editing_action_menu_create_object);
+        sparseIntArray2.put(ActionMenuEntry.CREATE_SECTION.swigValue(), C6421R.string.editing_action_menu_create_section);
+        sparseIntArray2.put(ActionMenuEntry.SPACE_MANAGEMENT.swigValue(), C6421R.string.editing_action_menu_manage_space);
+        sparseIntArray2.put(ActionMenuEntry.ADD_OBJECT.swigValue(), C6421R.string.editing_action_menu_add_object);
+        sparseIntArray2.put(ActionMenuEntry.CUT.swigValue(), C6421R.string.editing_action_menu_cut);
+        sparseIntArray2.put(ActionMenuEntry.COPY.swigValue(), C6421R.string.editing_action_menu_copy);
+        sparseIntArray2.put(ActionMenuEntry.COPY_AS.swigValue(), C6421R.string.editing_action_menu_copy_as);
+        sparseIntArray2.put(ActionMenuEntry.COPY_AS_TEXT.swigValue(), C6421R.string.editing_action_menu_copy_as_text);
+        sparseIntArray2.put(ActionMenuEntry.COPY_AS_DRAWING.swigValue(), C6421R.string.editing_action_menu_copy_as_drawing);
+        sparseIntArray2.put(ActionMenuEntry.COPY_AS_MATH.swigValue(), C6421R.string.editing_action_menu_copy_as_math);
+        sparseIntArray2.put(ActionMenuEntry.COPY_AS_DIAGRAM.swigValue(), C6421R.string.editing_action_menu_copy_as_diagram);
+        sparseIntArray2.put(ActionMenuEntry.GROUP_AS.swigValue(), C6421R.string.editing_action_menu_group_as);
+        sparseIntArray2.put(ActionMenuEntry.GROUP_AS_TEXT.swigValue(), C6421R.string.editing_action_menu_group_as_text);
+        sparseIntArray2.put(ActionMenuEntry.GROUP_AS_MATH.swigValue(), C6421R.string.editing_action_menu_group_as_math);
+        sparseIntArray2.put(ActionMenuEntry.GROUP_AS_SHAPE.swigValue(), C6421R.string.editing_action_menu_group_as_shape);
+        sparseIntArray2.put(ActionMenuEntry.GROUP_AS_DRAWING.swigValue(), C6421R.string.editing_action_menu_group_as_drawing);
+        sparseIntArray2.put(ActionMenuEntry.PASTE.swigValue(), C6421R.string.editing_action_menu_paste);
+        sparseIntArray2.put(ActionMenuEntry.REMOVE.swigValue(), C6421R.string.editing_action_menu_delete);
+        sparseIntArray2.put(ActionMenuEntry.CONVERT.swigValue(), C6421R.string.editing_action_menu_convert);
+        sparseIntArray2.put(ActionMenuEntry.CONVERT_AS.swigValue(), C6421R.string.editing_action_menu_convert_as);
+        sparseIntArray2.put(ActionMenuEntry.CONVERT_TEXT.swigValue(), C6421R.string.editing_action_menu_convert_text);
+        sparseIntArray2.put(ActionMenuEntry.CONVERT_MATH.swigValue(), C6421R.string.editing_action_menu_convert_math);
+        sparseIntArray2.put(ActionMenuEntry.RESIZE.swigValue(), C6421R.string.editing_action_menu_resize);
+        sparseIntArray2.put(ActionMenuEntry.STYLES.swigValue(), C6421R.string.editing_action_menu_styles);
+        sparseIntArray2.put(ActionMenuEntry.STYLES_BOLD.swigValue(), C6421R.string.editing_action_menu_styles_bold);
+        sparseIntArray2.put(ActionMenuEntry.STYLES_UNDERLINE.swigValue(), C6421R.string.editing_action_menu_styles_underline);
+        sparseIntArray2.put(ActionMenuEntry.STYLES_DOUBLE_UNDERLINE.swigValue(), C6421R.string.editing_action_menu_styles_double_underline);
+        sparseIntArray2.put(ActionMenuEntry.STYLES_STRIKE_THROUGH.swigValue(), C6421R.string.editing_action_menu_styles_strike_through);
+        sparseIntArray2.put(ActionMenuEntry.STYLES_HIGHLIGHT.swigValue(), C6421R.string.editing_action_menu_styles_highlight);
+        sparseIntArray2.put(ActionMenuEntry.INDENT.swigValue(), C6421R.string.editing_action_menu_indent);
+        sparseIntArray2.put(ActionMenuEntry.INDENT_DECREASE.swigValue(), C6421R.string.editing_action_menu_indent_decrease);
+        sparseIntArray2.put(ActionMenuEntry.INDENT_INCREASE.swigValue(), C6421R.string.editing_action_menu_indent_increase);
+        sparseIntArray2.put(ActionMenuEntry.LIST.swigValue(), C6421R.string.editing_action_menu_list);
+        sparseIntArray2.put(ActionMenuEntry.LIST_DOT.swigValue(), C6421R.string.editing_action_menu_list_dot);
+        sparseIntArray2.put(ActionMenuEntry.LIST_NUMBER.swigValue(), C6421R.string.editing_action_menu_list_number);
+        sparseIntArray2.put(ActionMenuEntry.LIST_CHECK_MARK.swigValue(), C6421R.string.editing_action_menu_list_check_mark);
+        sparseIntArray2.put(ActionMenuEntry.LIST_NONE.swigValue(), C6421R.string.editing_action_menu_list_none);
+        sparseIntArray2.put(ActionMenuEntry.PDF_PAGE_INSERT.swigValue(), C6421R.string.editing_action_menu_pdf_page_insert);
+        sparseIntArray2.put(ActionMenuEntry.PDF_PAGE_REMOVE.swigValue(), C6421R.string.editing_action_menu_pdf_page_remove);
+        sparseIntArray2.put(ActionMenuEntry.PDF_PAGE_DUPLICATE.swigValue(), C6421R.string.editing_action_menu_pdf_page_duplicate);
+        sparseIntArray2.put(ActionMenuEntry.PDF_PAGE_MOVE_UP.swigValue(), C6421R.string.editing_action_menu_pdf_page_move_up);
+        sparseIntArray2.put(ActionMenuEntry.PDF_PAGE_MOVE_DOWN.swigValue(), C6421R.string.editing_action_menu_pdf_page_move_down);
+        sparseIntArray2.put(ActionMenuEntry.AI.swigValue(), C6421R.string.editing_action_menu_ai);
+        sparseIntArray2.put(ActionMenuEntry.AI_EXPLAIN.swigValue(), C6421R.string.editing_action_menu_ai_explain);
+        sparseIntArray2.put(ActionMenuEntry.AI_SUMMARIZE.swigValue(), C6421R.string.editing_action_menu_ai_summarize);
+        sparseIntArray2.put(ActionMenuEntry.AI_QUIZ.swigValue(), C6421R.string.editing_action_menu_ai_quiz);
+        sparseIntArray2.put(ActionMenuEntry.CROP.swigValue(), C6421R.string.editing_action_menu_crop);
+        ACTION_MENU_LABELS = sparseIntArray2;
+    }
+}

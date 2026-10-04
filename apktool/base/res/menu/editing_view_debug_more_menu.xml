@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/page_item_more_menu_debug" android:orderInCategory="100" android:title="@string/debug_menu">
+        <menu>
+            <item android:id="@id/app_moremenu_debugUnloadPage" android:title="@string/debug_unloadPage" app:showAsAction="never" />
+            <item android:id="@id/app_moremenu_debugCrash" android:title="@string/debug_crash" app:showAsAction="never" />
+            <item android:id="@id/app_moremenu_debugCorrupt" android:title="@string/debug_corrupt" app:showAsAction="never" />
+            <item android:id="@id/app_moremenu_debug_toggle_pen_detected" android:title="@string/debug_more_menu_toggle_pen_detected" app:showAsAction="never" />
+            <item android:id="@id/app_moremenu_debug_toggle_typeset_box_display" android:title="@string/debug_more_menu_toggle_typeset_box_display" app:showAsAction="never" />
+            <item android:id="@id/app_moremenu_debug_toggle_inter_font_tracking" android:title="@string/debug_more_menu_toggle_inter_font_tracking" app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

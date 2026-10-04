@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/double_tap_add_blocks" android:menuCategory="container">
+        <item android:enabled="false" android:id="@id/double_tap_add_objects_category" android:title="@string/editing_add_category_block" />
+        <item android:icon="@drawable/ic_camera" android:id="@id/double_tap_add_block_camera" android:title="@string/action_camera" />
+        <item android:icon="@drawable/ic_image" android:id="@id/double_tap_add_block_picture" android:title="@string/action_picture" />
+        <item android:icon="@drawable/ic_2d_sketch" android:id="@id/double_tap_add_block_sketch" android:title="@string/action_sketch" />
+        <item android:icon="@drawable/ic_2d_diagram" android:id="@id/double_tap_add_block_diagram" android:title="@string/action_diagram" />
+        <item android:icon="@drawable/ic_2d_math" android:id="@id/double_tap_add_block_math" android:title="@string/action_math" />
+    </group>
+    <group android:id="@id/double_tap_add_sections" android:menuCategory="container">
+        <item android:enabled="false" android:id="@id/double_tap_add_sections_category" android:title="@string/editing_add_category_section" />
+        <item android:icon="@drawable/ic_2d_draft" android:id="@id/double_tap_add_section_draft" android:title="@string/action_section_draft" />
+    </group>
+</menu>

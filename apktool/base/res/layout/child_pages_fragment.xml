@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.myscript.nebo.editing.PageIndicatorEditText android:textStyle="bold" android:textColor="?colorPrimary" android:id="@id/child_pages_widget" android:background="@null" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:minWidth="48.0dp" android:minHeight="0.0dp" android:singleLine="true" android:selectAllOnFocus="true" android:digits="0123456789" android:inputType="number" android:imeOptions="actionDone" />
+        <com.google.android.material.divider.MaterialDivider android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <androidx.compose.ui.platform.ComposeView android:id="@id/child_pages_list" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <androidx.compose.ui.platform.ComposeView android:id="@id/discoverability_tooltip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

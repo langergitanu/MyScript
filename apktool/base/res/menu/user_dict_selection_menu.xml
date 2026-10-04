@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_delete" android:id="@id/user_dict_delete_selection_menu_item" android:title="@string/user_dictionary_clear_selection" app:showAsAction="ifRoom" />
+    <item android:id="@id/user_dict_select_all_menu_item" android:title="@string/user_dictionary_select_all" app:showAsAction="never" />
+    <item android:id="@id/user_dict_deselect_all_menu_item" android:title="@string/user_dictionary_deselect_all" app:showAsAction="never" />
+</menu>

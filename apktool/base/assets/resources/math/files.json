@@ -1,0 +1,20 @@
+{
+  "formatVersion": "1.0",
+  "files": [
+    {
+    "relativePath": "math-ak.res",
+    "md5": "c8b666bcc229a7da2449cfe87da3b9e5",
+    "size": "3685881"
+    },
+    {
+    "relativePath": "math-grm-standard.res",
+    "md5": "ab2697dd4abf5efc5a7ed4fa506bc491",
+    "size": "6637"
+    },
+    {
+    "relativePath": "../../conf/math.conf",
+    "md5": "fb0b201dd61267fd5280c86696891db1",
+    "size": "203"
+    }
+  ]
+}

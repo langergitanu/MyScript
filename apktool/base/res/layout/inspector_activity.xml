@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/inspector_files_explanation" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/inspector_files_explanation" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/inspector_info_detail_toggle" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_vertical" android:padding="8.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:text="@string/inspector_app_details_section_title" android:layout_weight="1.0" />
+            <ImageView android:id="@id/inspector_info_detail_toggle_icon" android:padding="12.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_arrow_up_to_down" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:scrollbarStyle="outsideOverlay" android:id="@id/inspector_info" android:background="?selectableItemBackground" android:focusable="true" android:visibility="gone" android:scrollbars="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="monospace" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" />
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/inspector_files_reload" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="8.0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@id/inspector_dms_stats" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_vertical" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:text="@string/inspector_files_list_title" />
+            <TextView android:textAppearance="?textAppearanceSearchResultSubtitle" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/inspector_files_empty_state" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:text="@string/inspector_files_empty_state" android:drawableTop="@drawable/ic_folder_outlined" android:drawablePadding="8.0dp" />
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/inspector_files_list" android:visibility="gone" android:scrollbars="vertical" android:fadingEdge="vertical" android:fadingEdgeLength="24.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" android:requiresFadingEdge="vertical" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

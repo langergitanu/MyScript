@@ -1,0 +1,58 @@
+package aws.sdk.kotlin.services.p010s3.serde;
+
+import androidx.core.app.NotificationCompat;
+import aws.sdk.kotlin.services.p010s3.model.ChecksumType;
+import aws.sdk.kotlin.services.p010s3.model.PutObjectResponse;
+import aws.sdk.kotlin.services.p010s3.model.RequestCharged;
+import aws.sdk.kotlin.services.p010s3.model.ServerSideEncryption;
+import aws.smithy.kotlin.runtime.http.HttpCall;
+import aws.smithy.kotlin.runtime.http.HttpStatusCodeKt;
+import aws.smithy.kotlin.runtime.http.operation.HttpDeserializer;
+import aws.smithy.kotlin.runtime.http.response.HttpResponse;
+import aws.smithy.kotlin.runtime.operation.ExecutionContext;
+import com.revenuecat.purchases.p036ui.revenuecatui.components.webview.WebViewMessageType;
+import kotlin.KotlinNothingValueException;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: PutObjectOperationDeserializer.kt */
+/* JADX INFO: loaded from: classes4.dex */
+@Metadata(m1598d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0012\n\u0000\b\u0000\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u0007¢\u0006\u0004\b\u0003\u0010\u0004J\"\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\b\u0010\n\u001a\u0004\u0018\u00010\u000bH\u0016¨\u0006\f"}, m1599d2 = {"Laws/sdk/kotlin/services/s3/serde/PutObjectOperationDeserializer;", "Laws/smithy/kotlin/runtime/http/operation/HttpDeserializer$NonStreaming;", "Laws/sdk/kotlin/services/s3/model/PutObjectResponse;", "<init>", "()V", "deserialize", WebViewMessageType.CONTEXT, "Laws/smithy/kotlin/runtime/operation/ExecutionContext;", NotificationCompat.CATEGORY_CALL, "Laws/smithy/kotlin/runtime/http/HttpCall;", "payload", "", "s3"}, m1600k = 1, m1601mv = {2, 3, 0}, m1603xi = 48)
+public final class PutObjectOperationDeserializer implements HttpDeserializer.NonStreaming<PutObjectResponse> {
+    /* JADX WARN: Can't rename method to resolve collision */
+    @Override // aws.smithy.kotlin.runtime.http.operation.HttpDeserializer.NonStreaming
+    public PutObjectResponse deserialize(ExecutionContext context, HttpCall call, byte[] payload) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        Intrinsics.checkNotNullParameter(call, "call");
+        HttpResponse response = call.getResponse();
+        if (!HttpStatusCodeKt.isSuccess(response.getStatus())) {
+            PutObjectOperationDeserializerKt.throwPutObjectError(context, call, payload);
+            throw new KotlinNothingValueException();
+        }
+        PutObjectResponse.Builder builder = new PutObjectResponse.Builder();
+        String str = response.getHeaders().get("x-amz-server-side-encryption-bucket-key-enabled");
+        builder.setBucketKeyEnabled(str != null ? Boolean.valueOf(Boolean.parseBoolean(str)) : null);
+        builder.setChecksumCrc32(response.getHeaders().get("x-amz-checksum-crc32"));
+        builder.setChecksumCrc32C(response.getHeaders().get("x-amz-checksum-crc32c"));
+        builder.setChecksumCrc64Nvme(response.getHeaders().get("x-amz-checksum-crc64nvme"));
+        builder.setChecksumSha1(response.getHeaders().get("x-amz-checksum-sha1"));
+        builder.setChecksumSha256(response.getHeaders().get("x-amz-checksum-sha256"));
+        String str2 = response.getHeaders().get("x-amz-checksum-type");
+        builder.setChecksumType(str2 != null ? ChecksumType.INSTANCE.fromValue(str2) : null);
+        builder.setETag(response.getHeaders().get("ETag"));
+        builder.setExpiration(response.getHeaders().get("x-amz-expiration"));
+        String str3 = response.getHeaders().get("x-amz-request-charged");
+        builder.setRequestCharged(str3 != null ? RequestCharged.INSTANCE.fromValue(str3) : null);
+        builder.setSseCustomerAlgorithm(response.getHeaders().get("x-amz-server-side-encryption-customer-algorithm"));
+        builder.setSseCustomerKeyMd5(response.getHeaders().get("x-amz-server-side-encryption-customer-key-MD5"));
+        builder.setSsekmsEncryptionContext(response.getHeaders().get("x-amz-server-side-encryption-context"));
+        builder.setSsekmsKeyId(response.getHeaders().get("x-amz-server-side-encryption-aws-kms-key-id"));
+        String str4 = response.getHeaders().get("x-amz-server-side-encryption");
+        builder.setServerSideEncryption(str4 != null ? ServerSideEncryption.INSTANCE.fromValue(str4) : null);
+        String str5 = response.getHeaders().get("x-amz-object-size");
+        builder.setSize(str5 != null ? Long.valueOf(Long.parseLong(str5)) : null);
+        builder.setVersionId(response.getHeaders().get("x-amz-version-id"));
+        builder.correctErrors$s3();
+        return builder.build();
+    }
+}

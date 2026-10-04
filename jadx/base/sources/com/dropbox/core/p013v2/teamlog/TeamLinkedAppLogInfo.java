@@ -1,0 +1,155 @@
+package com.dropbox.core.p013v2.teamlog;
+
+import com.dropbox.core.p013v2.teamlog.AppLogInfo;
+import com.dropbox.core.stone.StoneDeserializerLogger;
+import com.dropbox.core.stone.StoneSerializers;
+import com.dropbox.core.stone.StructSerializer;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonToken;
+import com.revenuecat.purchases.p036ui.revenuecatui.components.webview.Keys;
+import java.io.IOException;
+import javax.annotation.Nullable;
+
+/* JADX INFO: loaded from: classes5.dex */
+public class TeamLinkedAppLogInfo extends AppLogInfo {
+    public TeamLinkedAppLogInfo(@Nullable String str, @Nullable String str2) {
+        super(str, str2);
+    }
+
+    public TeamLinkedAppLogInfo() {
+        this(null, null);
+    }
+
+    @Override // com.dropbox.core.p013v2.teamlog.AppLogInfo
+    @Nullable
+    public String getAppId() {
+        return this.appId;
+    }
+
+    @Override // com.dropbox.core.p013v2.teamlog.AppLogInfo
+    @Nullable
+    public String getDisplayName() {
+        return this.displayName;
+    }
+
+    public static Builder newBuilder() {
+        return new Builder();
+    }
+
+    public static class Builder extends AppLogInfo.Builder {
+        protected Builder() {
+        }
+
+        @Override // com.dropbox.core.v2.teamlog.AppLogInfo.Builder
+        public Builder withAppId(String str) {
+            super.withAppId(str);
+            return this;
+        }
+
+        @Override // com.dropbox.core.v2.teamlog.AppLogInfo.Builder
+        public Builder withDisplayName(String str) {
+            super.withDisplayName(str);
+            return this;
+        }
+
+        @Override // com.dropbox.core.v2.teamlog.AppLogInfo.Builder
+        public TeamLinkedAppLogInfo build() {
+            return new TeamLinkedAppLogInfo(this.appId, this.displayName);
+        }
+    }
+
+    @Override // com.dropbox.core.p013v2.teamlog.AppLogInfo
+    public int hashCode() {
+        return getClass().toString().hashCode();
+    }
+
+    @Override // com.dropbox.core.p013v2.teamlog.AppLogInfo
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (obj == null || !obj.getClass().equals(getClass())) {
+            return false;
+        }
+        TeamLinkedAppLogInfo teamLinkedAppLogInfo = (TeamLinkedAppLogInfo) obj;
+        return (this.appId == teamLinkedAppLogInfo.appId || (this.appId != null && this.appId.equals(teamLinkedAppLogInfo.appId))) && (this.displayName == teamLinkedAppLogInfo.displayName || (this.displayName != null && this.displayName.equals(teamLinkedAppLogInfo.displayName)));
+    }
+
+    @Override // com.dropbox.core.p013v2.teamlog.AppLogInfo
+    public String toString() {
+        return Serializer.INSTANCE.serialize(this, false);
+    }
+
+    @Override // com.dropbox.core.p013v2.teamlog.AppLogInfo
+    public String toStringMultiline() {
+        return Serializer.INSTANCE.serialize(this, true);
+    }
+
+    static class Serializer extends StructSerializer<TeamLinkedAppLogInfo> {
+        public static final Serializer INSTANCE = new Serializer();
+
+        Serializer() {
+        }
+
+        @Override // com.dropbox.core.stone.StructSerializer
+        public void serialize(TeamLinkedAppLogInfo teamLinkedAppLogInfo, JsonGenerator jsonGenerator, boolean z) throws IOException {
+            if (!z) {
+                jsonGenerator.writeStartObject();
+            }
+            writeTag("team_linked_app", jsonGenerator);
+            if (teamLinkedAppLogInfo.appId != null) {
+                jsonGenerator.writeFieldName("app_id");
+                StoneSerializers.nullable(StoneSerializers.string()).serialize(teamLinkedAppLogInfo.appId, jsonGenerator);
+            }
+            if (teamLinkedAppLogInfo.displayName != null) {
+                jsonGenerator.writeFieldName(Keys.DISPLAY_NAME);
+                StoneSerializers.nullable(StoneSerializers.string()).serialize(teamLinkedAppLogInfo.displayName, jsonGenerator);
+            }
+            if (z) {
+                return;
+            }
+            jsonGenerator.writeEndObject();
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        /* JADX WARN: Removed duplicated region for block: B:6:0x0012  */
+        @Override // com.dropbox.core.stone.StructSerializer
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+        */
+        public TeamLinkedAppLogInfo deserialize(JsonParser jsonParser, boolean z) throws IOException {
+            String tag;
+            String str = null;
+            if (!z) {
+                expectStartObject(jsonParser);
+                tag = readTag(jsonParser);
+                if ("team_linked_app".equals(tag)) {
+                    tag = null;
+                }
+            }
+            if (tag == null) {
+                String str2 = null;
+                while (jsonParser.getCurrentToken() == JsonToken.FIELD_NAME) {
+                    String currentName = jsonParser.getCurrentName();
+                    jsonParser.nextToken();
+                    if ("app_id".equals(currentName)) {
+                        str = (String) StoneSerializers.nullable(StoneSerializers.string()).deserialize(jsonParser);
+                    } else if (Keys.DISPLAY_NAME.equals(currentName)) {
+                        str2 = (String) StoneSerializers.nullable(StoneSerializers.string()).deserialize(jsonParser);
+                    } else {
+                        skipValue(jsonParser);
+                    }
+                }
+                TeamLinkedAppLogInfo teamLinkedAppLogInfo = new TeamLinkedAppLogInfo(str, str2);
+                if (!z) {
+                    expectEndObject(jsonParser);
+                }
+                StoneDeserializerLogger.log(teamLinkedAppLogInfo, teamLinkedAppLogInfo.toStringMultiline());
+                return teamLinkedAppLogInfo;
+            }
+            throw new JsonParseException(jsonParser, "No subtype found that matches tag: \"" + tag + "\"");
+        }
+    }
+}

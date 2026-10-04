@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:title="@string/pref_network_cellular_label" android:key="@string/pref_network_cellular_key" android:summary="@string/pref_network_cellular_prompt" android:defaultValue="@bool/pref_enable_data_over_cellular_default" app:iconSpaceReserved="false" />
+</PreferenceScreen>

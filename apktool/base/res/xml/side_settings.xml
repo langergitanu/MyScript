@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/side_panel_settings_account_title" app:fragment="com.myscript.nebo.settings.AccountSettingsFragment" app:icon="@drawable/ic_useroutline_24" />
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/side_panel_settings_display_title" android:key="@string/pref_display_key" app:fragment="com.myscript.nebo.settings.DisplaySettingsFragment" app:icon="@drawable/ic_display" />
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/side_panel_settings_cpi_title" app:fragment="com.myscript.nebo.settings.PenSettingsFragment" app:icon="@drawable/ic_pen_24" />
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/side_panel_settings_writing_title" android:key="@string/pref_writing_category_key" app:fragment="com.myscript.nebo.settings.WritingSettingsFragment" app:icon="@drawable/ic_tag_textmixed_24" />
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/side_panel_settings_interactivity_title" android:key="@string/pref_interactivity_category_key" app:fragment="com.myscript.nebo.settings.InteractivitySettingsFragment" app:icon="@drawable/ic_interactivity" />
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/side_panel_settings_dictionary_title" android:key="@string/pref_user_dictionary_key" app:fragment="com.myscript.nebo.userdict.ui.UserDictionaryFragment" app:icon="@drawable/ic_bookopen_24" />
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/settings_group_maths_title" app:fragment="com.myscript.nebo.settings.MathSettingsFragment" app:icon="@drawable/ic_math_24" />
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/side_panel_settings_sync_title" android:key="@string/pref_cloud_sync_settings_key" app:fragment="com.myscript.nebo.settings.SyncSettingsFragment" app:icon="@drawable/ic_cloud_outline" app:premiumFeature="true" />
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/side_panel_settings_network_title" app:fragment="com.myscript.nebo.settings.NetworkSettingsFragment" app:icon="@drawable/ic_signal_cellular_alt_24" />
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/side_panel_settings_backup_title" app:fragment="com.myscript.nebo.settings.BackupSettingsFragment" app:icon="@drawable/ic_archive_24" />
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/side_panel_settings_privacy_title" app:fragment="com.myscript.nebo.settings.PrivacySettingsFragment" app:icon="@drawable/ic_shield_24" />
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/side_panel_settings_nebo_ai_title" app:fragment="com.myscript.nebo.settings.NeboAISettingsFragment" app:icon="@drawable/ic_sparkles" app:isPreferenceVisible="@bool/is_ai_available_for_flavor" />
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/internal_side_panel_settings_title" android:key="@string/pref_internal_key" app:fragment="com.myscript.nebo.settings.InternalSettingsFragment" app:icon="@drawable/ic_bug" app:isPreferenceVisible="false" />
+    <Preference android:title="@string/side_panel_settings_debug_title" app:fragment="com.myscript.nebo.settings.DebugSettingsFragment" app:icon="@drawable/ic_bug" app:isPreferenceVisible="@bool/show_debug_menu" />
+</PreferenceScreen>

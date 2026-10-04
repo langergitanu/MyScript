@@ -1,0 +1,48 @@
+package com.revenuecat.purchases.p036ui.revenuecatui.customercenter.views;
+
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import androidx.compose.runtime.internal.ComposableLambdaKt;
+import com.revenuecat.purchases.PurchasesError;
+import com.revenuecat.purchases.PurchasesErrorCode;
+import com.revenuecat.purchases.p036ui.revenuecatui.customercenter.data.CustomerCenterState;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function2;
+
+/* JADX INFO: compiled from: CustomerCenterErrorView.kt */
+/* JADX INFO: loaded from: classes8.dex */
+@Metadata(m1600k = 3, m1601mv = {1, 8, 0}, m1603xi = 48)
+public final class ComposableSingletons$CustomerCenterErrorViewKt {
+    public static final ComposableSingletons$CustomerCenterErrorViewKt INSTANCE = new ComposableSingletons$CustomerCenterErrorViewKt();
+
+    /* JADX INFO: renamed from: lambda-1, reason: not valid java name */
+    public static Function2<Composer, Integer, Unit> f2938lambda1 = ComposableLambdaKt.composableLambdaInstance(-1516678677, false, new Function2<Composer, Integer, Unit>() { // from class: com.revenuecat.purchases.ui.revenuecatui.customercenter.views.ComposableSingletons$CustomerCenterErrorViewKt$lambda-1$1
+        @Override // kotlin.jvm.functions.Function2
+        public /* bridge */ /* synthetic */ Unit invoke(Composer composer, Integer num) {
+            invoke(composer, num.intValue());
+            return Unit.INSTANCE;
+        }
+
+        public final void invoke(Composer composer, int i) {
+            ComposerKt.sourceInformation(composer, "C23@837L274:CustomerCenterErrorView.kt#870w7w");
+            if ((i & 3) != 2 || !composer.getSkipping()) {
+                if (ComposerKt.isTraceInProgress()) {
+                    ComposerKt.traceEventStart(-1516678677, i, -1, "com.revenuecat.purchases.ui.revenuecatui.customercenter.views.ComposableSingletons$CustomerCenterErrorViewKt.lambda-1.<anonymous> (CustomerCenterErrorView.kt:23)");
+                }
+                CustomerCenterErrorViewKt.CustomerCenterErrorView(new CustomerCenterState.Error(new PurchasesError(PurchasesErrorCode.UnknownError, "Mock error")), composer, 0);
+                if (ComposerKt.isTraceInProgress()) {
+                    ComposerKt.traceEventEnd();
+                    return;
+                }
+                return;
+            }
+            composer.skipToGroupEnd();
+        }
+    });
+
+    /* JADX INFO: renamed from: getLambda-1$revenuecatui_defaultsRelease, reason: not valid java name */
+    public final Function2<Composer, Integer, Unit> m14151getLambda1$revenuecatui_defaultsRelease() {
+        return f2938lambda1;
+    }
+}

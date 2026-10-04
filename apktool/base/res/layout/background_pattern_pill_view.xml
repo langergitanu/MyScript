@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/page_pattern_card" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_margin="8.0dp" android:checkable="true" android:backgroundTint="@color/page_pattern_background_color" app:cardCornerRadius="8.0dp" app:cardElevation="0.0dp" app:checkedIcon="@drawable/ic_check" app:checkedIconMargin="12.0dp" app:checkedIconSize="24.0dp" app:checkedIconTint="?colorPrimary" app:strokeColor="@color/page_pattern_selection_stroke_selector" app:strokeWidth="0.5dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/page_pattern_illustration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/page_pattern_blank" android:scaleType="centerInside" app:tint="@color/page_pattern_color" />
+</com.google.android.material.card.MaterialCardView>

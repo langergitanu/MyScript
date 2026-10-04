@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:padding="?dialogPreferredPadding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:hintEnabled="false" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/page_title">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/page_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/page_title_hint" android:maxLines="1" android:inputType="text" android:imeOptions="actionDone" />
+    </com.google.android.material.textfield.TextInputLayout>
+</ScrollView>

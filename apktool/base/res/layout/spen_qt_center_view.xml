@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="100.0dp" android:layout_height="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/spen_qt_center_image" android:layout_width="60.0dp" android:layout_height="60.0dp" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+</RelativeLayout>

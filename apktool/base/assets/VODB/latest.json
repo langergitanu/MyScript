@@ -1,0 +1,274 @@
+{
+  "formatVersion": "1.0",
+  "version": "8.11.0.708",
+  "folders": [
+    {
+      "name": "af_ZA",
+      "md5": "7d881b1ad1251b1cc67a31728037081d"
+    },
+    {
+      "name": "az_AZ",
+      "md5": "c410c858a75ce40cce4e95f21fddb97a"
+    },
+    {
+      "name": "be_BY",
+      "md5": "5f63f434b17700198407589a49df85b9"
+    },
+    {
+      "name": "bg_BG",
+      "md5": "fecb24a18026a289a11703f9d2a64468"
+    },
+    {
+      "name": "bs_BA",
+      "md5": "c5c4538355279be996a4de96d73ba29a"
+    },
+    {
+      "name": "ca_ES",
+      "md5": "457ab6a629c15f51bc9030060f3e447f"
+    },
+    {
+      "name": "ceb_PH",
+      "md5": "32ff592d2987d6e35659bf7ed7131834"
+    },
+    {
+      "name": "cs_CZ",
+      "md5": "4ece91bb1a9cd30dbc8373ee299312a6"
+    },
+    {
+      "name": "da_DK",
+      "md5": "827e58ff12396007a6fa6ae079cc5434"
+    },
+    {
+      "name": "de_AT",
+      "md5": "a6c0277b0e2d9165f1966b4368167dff"
+    },
+    {
+      "name": "de_DE",
+      "md5": "66eb4b9eb110018ddc3c16bf95a86d65"
+    },
+    {
+      "name": "el_GR",
+      "md5": "f68e9f80f25be715f6bcd0fb98893111"
+    },
+    {
+      "name": "en_CA",
+      "md5": "5a22347dec0f3c69faafeedd8d16ebc1"
+    },
+    {
+      "name": "en_GB",
+      "md5": "43a3c0804e88f0f9402833a0773f6fff"
+    },
+    {
+      "name": "en_PH",
+      "md5": "7e8f991d824d619a145eaedcb3286456"
+    },
+    {
+      "name": "en_US",
+      "md5": "2e48a2fed3ffad8020acd9ae4b2c5602"
+    },
+    {
+      "name": "en_ZA",
+      "md5": "62756b632c3dd99370ba02f98526243a"
+    },
+    {
+      "name": "es_CO",
+      "md5": "8a41387ba420c6e96f3993bd22d0204b"
+    },
+    {
+      "name": "es_ES",
+      "md5": "e5a1b65fb18512e7ead54020301604ff"
+    },
+    {
+      "name": "es_MX",
+      "md5": "af953214ff24ddd4af4a87f5d8a44f8f"
+    },
+    {
+      "name": "et_EE",
+      "md5": "dae10c96f9029662b4d1c76a20418757"
+    },
+    {
+      "name": "eu_ES",
+      "md5": "318b03d796c7c4198b057fe0fb757cea"
+    },
+    {
+      "name": "fi_FI",
+      "md5": "efa328bbf12c1eaaf6e2fb02afc36b0a"
+    },
+    {
+      "name": "fil_PH",
+      "md5": "652ed3b888f3a64ca5ffc369eda3b1e7"
+    },
+    {
+      "name": "fr_CA",
+      "md5": "de483f13beb8006eb6dd29e751e7a5e6"
+    },
+    {
+      "name": "fr_FR",
+      "md5": "613838b55dc4863c062f55fa405c9215"
+    },
+    {
+      "name": "ga_IE",
+      "md5": "0eb1cd525a5fec082753193313b651d7"
+    },
+    {
+      "name": "gl_ES",
+      "md5": "fb328daf07494837ea215120c194d009"
+    },
+    {
+      "name": "hr_HR",
+      "md5": "1d871981a419fd9c6702e1d37a155fc6"
+    },
+    {
+      "name": "hu_HU",
+      "md5": "be5fdb82ac7d7d783c10fffd08429444"
+    },
+    {
+      "name": "hy_AM",
+      "md5": "6c425a3aa54017fbe2fe83f95c777cf2"
+    },
+    {
+      "name": "id_ID",
+      "md5": "fe8cd7d4321e6505e5f0e9f6991af80f"
+    },
+    {
+      "name": "is_IS",
+      "md5": "22c131659f66f5d0de16a55d59e607f5"
+    },
+    {
+      "name": "it_IT",
+      "md5": "863816ee219e1443c03000d2cfef6072"
+    },
+    {
+      "name": "ja_JP",
+      "md5": "028a17dbd2de6d3fd30755010cf2cca9"
+    },
+    {
+      "name": "ka_GE",
+      "md5": "151f3080d81382fc019d8f503d535574"
+    },
+    {
+      "name": "kk_KZ",
+      "md5": "cca4fd7f033c6704aefe24b7f24dc66e"
+    },
+    {
+      "name": "ko_KR",
+      "md5": "533a139856632776061e768a6cd49db2"
+    },
+    {
+      "name": "lt_LT",
+      "md5": "4d065c7fb2b1707d4f5d18c159bd7110"
+    },
+    {
+      "name": "lv_LV",
+      "md5": "7452696ac87da80632fdca5a23e2f471"
+    },
+    {
+      "name": "mg_MG",
+      "md5": "993e169042862f3651fc294f3e53541f"
+    },
+    {
+      "name": "mk_MK",
+      "md5": "0580c72e9fbe1a20c62c5e127ab4a447"
+    },
+    {
+      "name": "mn_MN",
+      "md5": "7ee87004d08614773b2ba089662b8a2d"
+    },
+    {
+      "name": "ms_MY",
+      "md5": "8f28774aec6efeb9ef354a52084a6c65"
+    },
+    {
+      "name": "mul",
+      "md5": "ceda35d21b47156fba2ee6f0cc153cf1"
+    },
+    {
+      "name": "nl_BE",
+      "md5": "f0e5ccb20f5dfd3c405bde9b566e724b"
+    },
+    {
+      "name": "nl_NL",
+      "md5": "679ea041624c7012b575130efb75e197"
+    },
+    {
+      "name": "no_NO",
+      "md5": "503348347803440743c9afd89008b672"
+    },
+    {
+      "name": "pl_PL",
+      "md5": "2fff6bc258b9064c534c971469071eaf"
+    },
+    {
+      "name": "pt_BR",
+      "md5": "bec0447914b0808cdc7439ccbc97bf1b"
+    },
+    {
+      "name": "pt_PT",
+      "md5": "8d06bcdd6fa0b03540c417250823eb85"
+    },
+    {
+      "name": "ro_RO",
+      "md5": "9aafe0103c5470b93303bf12341ca517"
+    },
+    {
+      "name": "ru_RU",
+      "md5": "354668967f0c9ab1a4a1432563b9424d"
+    },
+    {
+      "name": "sk_SK",
+      "md5": "164f85d8ab1d7b97e3414dc48945880f"
+    },
+    {
+      "name": "sl_SI",
+      "md5": "337f037fb0f57fbfe7e2ced2285dbe39"
+    },
+    {
+      "name": "sq_AL",
+      "md5": "f7ecb4fb5b04eba398e926a7ac479479"
+    },
+    {
+      "name": "sr_Cyrl_RS",
+      "md5": "b4a75e13120654ee8be1399049556089"
+    },
+    {
+      "name": "sr_Latn_RS",
+      "md5": "301adecef9c6254890f4878c6eda2b67"
+    },
+    {
+      "name": "sv_SE",
+      "md5": "b71123a1915ef01117de76b1542550fa"
+    },
+    {
+      "name": "sw_TZ",
+      "md5": "7aed5cc151aea748fd45101c536edb1b"
+    },
+    {
+      "name": "tr_TR",
+      "md5": "40f628ed29f23458f17845f0ecce2268"
+    },
+    {
+      "name": "tt_RU",
+      "md5": "c8d0b5b4b8922e6281397b32b62d3462"
+    },
+    {
+      "name": "uk_UA",
+      "md5": "fdcdd5fe086b83a54602797825d6cf0d"
+    },
+    {
+      "name": "vi_VN",
+      "md5": "748dcc599d5f585f045395d902ae1f3c"
+    },
+    {
+      "name": "zh_CN",
+      "md5": "64fcb4364aa23f66f1ecd7107c6e9f01"
+    },
+    {
+      "name": "zh_HK",
+      "md5": "5d0f4c6dbb9a4a8d2e71384f27bb0728"
+    },
+    {
+      "name": "zh_TW",
+      "md5": "ac268b03c6e3fe32f8f20bcf096450f6"
+    }
+  ]
+}

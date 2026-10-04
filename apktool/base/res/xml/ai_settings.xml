@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:title="@string/side_panel_settings_nebo_ai_desc" android:key="@string/pref_nebo_ai_key" android:summary="@string/side_panel_settings_about_ai" app:iconSpaceReserved="false" />
+</androidx.preference.PreferenceScreen>

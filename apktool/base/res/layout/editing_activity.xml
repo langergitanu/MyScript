@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/editing_activity_frame_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:theme="?actionBarTheme" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="4.0dp" style="@style/Style.App.ActionBar">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.google.android.material.appbar.MaterialToolbar android:id="@id/editing_activity_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <com.google.android.material.divider.MaterialDivider android:layout_width="match_parent" android:layout_height="0.5dp" />
+                <LinearLayout android:orientation="vertical" android:id="@id/secondary_toolbar_container" android:layout_width="match_parent" android:layout_height="@dimen/secondary_nav_bar_height">
+                    <include layout="@layout/search_results" />
+                    <FrameLayout android:id="@id/editing_activity_secondary_toolbar" android:layout_width="match_parent" android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <include layout="@layout/editing_content_layout" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center|top" android:id="@id/retail_qr_toolbar_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="64.0dp" android:src="@null" android:adjustViewBounds="true" android:elevation="8.0dp" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/ai_pane" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/main_activity_compose_dialog_host" android:layout_width="match_parent" android:layout_height="match_parent" android:translationZ="16.0dp" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/main_activity_paywall" android:layout_width="match_parent" android:layout_height="match_parent" android:translationZ="16.0dp" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/discoverability_tooltip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/data_collect_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

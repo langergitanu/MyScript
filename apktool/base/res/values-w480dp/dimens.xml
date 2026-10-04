@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pen_toolbar_padding">24.0dp</dimen>
+</resources>

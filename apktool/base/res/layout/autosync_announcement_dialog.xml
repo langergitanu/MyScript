@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="?dialogPreferredPadding" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/autosync_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pls_auto_sync_announcement" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxWidth="240.0dp" android:layout_marginVertical="16.0dp" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/auto_sync_alert_dialog_text" android:lineSpacingExtra="4.0dp" android:layout_marginVertical="24.0dp" android:justificationMode="inter_word" />
+</LinearLayout>

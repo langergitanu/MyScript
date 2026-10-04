@@ -1,0 +1,24 @@
+package com.google.android.gms.internal.measurement;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.util.concurrent.atomic.AtomicReferenceArray;
+
+/* JADX INFO: compiled from: D8$$SyntheticClass */
+/* JADX INFO: loaded from: classes5.dex */
+public final /* synthetic */ class zzah$$ExternalSyntheticBackportWithForwarding0 {
+    /* JADX INFO: renamed from: m */
+    public static /* synthetic */ BigDecimal m609m(BigDecimal bigDecimal) {
+        return bigDecimal.signum() == 0 ? new BigDecimal(BigInteger.ZERO, 0) : bigDecimal.stripTrailingZeros();
+    }
+
+    /* JADX INFO: renamed from: m */
+    public static /* synthetic */ boolean m610m(AtomicReferenceArray atomicReferenceArray, int i, Object obj, Object obj2) {
+        while (!atomicReferenceArray.compareAndSet(i, obj, obj2)) {
+            if (atomicReferenceArray.get(i) != obj) {
+                return false;
+            }
+        }
+        return true;
+    }
+}

@@ -1,0 +1,9 @@
+package com.google.common.collect;
+
+import com.google.errorprone.annotations.DoNotMock;
+
+/* JADX INFO: loaded from: classes6.dex */
+@DoNotMock("Use Interners.new*Interner")
+public interface Interner<E> {
+    E intern(E sample);
+}

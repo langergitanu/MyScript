@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/survicate_micro_space_xs"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/survicate_micro_question_matrix_column_min_height">
+        <RadioButton android:id="@id/item_micro_matrix_column_radio_button" android:focusable="false" android:clickable="false" android:layout_width="@dimen/survicate_micro_question_radio_button_size" android:layout_height="@dimen/survicate_micro_question_radio_button_size" android:layout_marginTop="@dimen/survicate_micro_space_xxs" android:layout_marginBottom="@dimen/survicate_micro_space_xxs" android:button="@null" android:layout_marginStart="@dimen/survicate_micro_space_xs" />
+        <TextView android:textAppearance="@style/Widget.Survicate.QuestionOption.Text.Micro" android:id="@id/item_micro_matrix_column_name" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/survicate_micro_space_s" android:layout_marginBottom="@dimen/survicate_micro_space_s" android:layout_weight="1.0" android:layout_marginStart="@dimen/survicate_micro_space_xxs" android:layout_marginEnd="@dimen/survicate_micro_space_md" android:labelFor="@id/item_micro_matrix_column_radio_button" />
+    </LinearLayout>
+    <com.survicate.surveys.presentation.widget.MicroSurvicateCommentField android:id="@id/item_micro_matrix_comment_field" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:survicateCommentFieldStyle="nested" />
+</LinearLayout>

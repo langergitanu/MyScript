@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem" android:id="@id/share_page_contact_row_mail" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/share_page_contact_row_delete" android:background="?selectableItemBackground" android:padding="12.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_close" />
+</LinearLayout>

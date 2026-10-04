@@ -1,0 +1,32 @@
+package androidx.media3.common;
+
+import com.pdftron.pdf.pdfa.PDFACompliance;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class AuxEffectInfo {
+    public static final int NO_AUX_EFFECT_ID = 0;
+    public final int effectId;
+    public final float sendLevel;
+
+    public AuxEffectInfo(int i, float f) {
+        this.effectId = i;
+        this.sendLevel = f;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj != null && getClass() == obj.getClass()) {
+            AuxEffectInfo auxEffectInfo = (AuxEffectInfo) obj;
+            if (this.effectId == auxEffectInfo.effectId && Float.compare(auxEffectInfo.sendLevel, this.sendLevel) == 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        return ((PDFACompliance.e_PDFA5_2_7 + this.effectId) * 31) + Float.floatToIntBits(this.sendLevel);
+    }
+}

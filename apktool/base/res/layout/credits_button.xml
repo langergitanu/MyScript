@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/credit_item" android:background="@drawable/credit_item_list_background" android:layout_width="match_parent" android:layout_height="@dimen/about_row_button_height" android:foreground="?selectableItemBackground" android:paddingStart="?listPreferredItemPaddingStart" android:paddingEnd="?listPreferredItemPaddingEnd" />
+</FrameLayout>

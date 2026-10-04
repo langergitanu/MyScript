@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="?actionBarTheme" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="0.0dp" app:elevation="0.0dp">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/color_picker_toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:menu="@menu/color_picker_menu" app:navigationIcon="@drawable/ic_arrow_back" app:title="@string/cp_color" style="@style/ThemeOverlay.App.Toolbar.Dialog" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textColor="?android:textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_picker_hue" style="?android:preferenceCategoryStyle" />
+            <com.myscript.nebo.penpanel.ColorCircle android:id="@id/color_circle" android:padding="24.0dp" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="0.0" app:circle_radius="@dimen/cp_circle_radius" app:circle_thickness="@dimen/cp_circle_thickness" app:font_size="@dimen/cp_tooltip_font_size" app:foreground_color_dark="@color/lightColorForeground" app:foreground_color_light="@color/darkColorForeground" app:inset="24.0dp" app:reset_button_width="24.0dp" app:thumb_radius="6.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textColor="?android:textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_picker_saturation" style="?android:preferenceCategoryStyle" />
+            <com.myscript.nebo.penpanel.ColorSeekBar android:id="@id/saturation_seekbar" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="255" app:gradient_color_left="#ffffffff" app:progress_thickness="4.0dp" app:sb_font_size="@dimen/cp_tooltip_font_size" app:seekbar_thumb_radius="6.0dp" app:thumb_thickness="4.0dp" />
+            <TextView android:textColor="?android:textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_picker_brightness" style="?android:preferenceCategoryStyle" />
+            <com.myscript.nebo.penpanel.ColorSeekBar android:id="@id/brightness_seekbar" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="255" app:gradient_color_left="#ff000000" app:progress_thickness="4.0dp" app:sb_font_size="@dimen/cp_tooltip_font_size" app:seekbar_thumb_radius="6.0dp" app:thumb_thickness="4.0dp" />
+            <TextView android:id="@id/color_accuracy_disclaimer" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="64.0dp" android:text="@string/color_picker_explanation_footer" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

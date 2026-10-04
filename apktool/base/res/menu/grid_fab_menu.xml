@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_notebook_outlined" android:id="@id/action_notebook" android:title="@string/grid_fab_menu_notebook" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_freeform_page" android:id="@id/action_raw_content_page" android:title="@string/grid_fab_menu_new_board" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_structured_page" android:id="@id/action_text_page" android:title="@string/grid_fab_menu_new_document" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_pdf" android:id="@id/action_pdf_import" android:title="@string/grid_fab_menu_pdf_import" app:showAsAction="never" />
+</menu>

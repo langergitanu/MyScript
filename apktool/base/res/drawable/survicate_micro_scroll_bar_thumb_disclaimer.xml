@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="@dimen/survicate_micro_space_xxs" android:bottom="@dimen/survicate_micro_space_xxs">
+        <shape android:shape="rectangle">
+            <size android:width="@dimen/survicate_micro_scroll_thumb_small_width" />
+            <corners android:radius="@dimen/survicate_micro_scroll_thumb_small_radius" />
+            <solid android:color="@color/survicate_micro_scroll_bar_thumb_color" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,27 @@
+package androidx.datastore.preferences.core;
+
+import androidx.datastore.preferences.core.Preferences;
+import java.util.Arrays;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: PreferencesFactory.kt */
+/* JADX INFO: loaded from: classes2.dex */
+@Metadata(m1598d1 = {"\u0000\u001e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a\r\u0010\u0000\u001a\u00020\u0001H\u0007¢\u0006\u0002\b\u0002\u001a+\u0010\u0003\u001a\u00020\u00012\u001a\u0010\u0004\u001a\u000e\u0012\n\b\u0001\u0012\u0006\u0012\u0002\b\u00030\u00060\u0005\"\u0006\u0012\u0002\b\u00030\u0006H\u0007¢\u0006\u0004\b\u0007\u0010\b\u001a+\u0010\t\u001a\u00020\n2\u001a\u0010\u0004\u001a\u000e\u0012\n\b\u0001\u0012\u0006\u0012\u0002\b\u00030\u00060\u0005\"\u0006\u0012\u0002\b\u00030\u0006H\u0007¢\u0006\u0004\b\u000b\u0010\f¨\u0006\r"}, m1599d2 = {"emptyPreferences", "Landroidx/datastore/preferences/core/Preferences;", "createEmpty", "preferencesOf", "pairs", "", "Landroidx/datastore/preferences/core/Preferences$Pair;", "create", "([Landroidx/datastore/preferences/core/Preferences$Pair;)Landroidx/datastore/preferences/core/Preferences;", "mutablePreferencesOf", "Landroidx/datastore/preferences/core/MutablePreferences;", "createMutable", "([Landroidx/datastore/preferences/core/Preferences$Pair;)Landroidx/datastore/preferences/core/MutablePreferences;", "datastore-preferences-core"}, m1600k = 2, m1601mv = {2, 0, 0}, m1603xi = 48)
+public final class PreferencesFactory {
+    public static final Preferences createEmpty() {
+        return new MutablePreferences(null, true, 1, null);
+    }
+
+    public static final Preferences create(Preferences.Pair<?>... pairs) {
+        Intrinsics.checkNotNullParameter(pairs, "pairs");
+        return createMutable((Preferences.Pair[]) Arrays.copyOf(pairs, pairs.length));
+    }
+
+    public static final MutablePreferences createMutable(Preferences.Pair<?>... pairs) {
+        Intrinsics.checkNotNullParameter(pairs, "pairs");
+        MutablePreferences mutablePreferences = new MutablePreferences(null, false, 1, null);
+        mutablePreferences.putAll((Preferences.Pair[]) Arrays.copyOf(pairs, pairs.length));
+        return mutablePreferences;
+    }
+}

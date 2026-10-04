@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="onboarding_headline_text_size">30.0sp</dimen>
+    <dimen name="onboarding_language_selection_search_margin_bottom">32.0dp</dimen>
+    <dimen name="onboarding_margin_horizontal">32.0dp</dimen>
+    <dimen name="onboarding_selection_screen_title_margin_top">56.0dp</dimen>
+    <dimen name="onboarding_selection_screens_title_margin_bottom">32.0dp</dimen>
+    <dimen name="onboarding_subhead_text_size">20.0sp</dimen>
+    <dimen name="onboarding_text_max_width">400.0sp</dimen>
+</resources>

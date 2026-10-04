@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="setting_pen_title_close_button_circle_alpha">0.1</dimen>
+</resources>

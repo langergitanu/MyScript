@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/survicate_micro_space_md" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.survicate.surveys.presentation.widget.MicroQuestionHeader android:id="@id/view_micro_survey_point_numerical_content_header" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/view_micro_survey_point_numerical_content_answers_host" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_micro_question_legend" />
+    <com.survicate.surveys.presentation.widget.MicroSurvicateCommentField android:id="@id/view_micro_survey_point_numerical_content_comment_field" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/survicate_micro_space_md" android:layout_marginBottom="@dimen/survicate_micro_space_xs" app:survicateCommentFieldStyle="standalone" />
+</LinearLayout>

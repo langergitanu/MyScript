@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+        <TextView android:textColor="?android:textColorSecondary" android:id="@id/txt_language_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" android:drawablePadding="16.0dp" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+        <FrameLayout android:id="@id/dms_rmc_fragment_language_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/language_list" android:fadingEdge="vertical" android:fadingEdgeLength="24.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:requiresFadingEdge="vertical" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/page_inline_selection_base_group">
+        <item android:icon="@drawable/ic_content_cut" android:id="@id/page_inline_selection_cut" android:title="@string/page_inline_selection_cut" app:showAsAction="ifRoom|withText" />
+        <item android:icon="@drawable/ic_content_copy_std" android:id="@id/page_inline_selection_copy" android:title="@string/page_inline_selection_copy" app:showAsAction="ifRoom|withText" />
+        <item android:icon="@drawable/ic_content_copy_std" android:id="@id/page_inline_selection_copy_as" android:title="@string/page_inline_selection_copy_as" app:showAsAction="ifRoom|withText" />
+        <item android:icon="@drawable/ic_content_paste" android:id="@id/page_inline_selection_paste" android:title="@string/page_inline_selection_paste" app:showAsAction="ifRoom|withText" />
+        <item android:icon="@drawable/ic_delete" android:id="@id/page_inline_selection_delete" android:title="@string/page_inline_selection_delete" app:showAsAction="ifRoom|withText" />
+        <item android:id="@id/page_inline_selection_ai" android:title="@string/page_inline_selection_ai" app:showAsAction="ifRoom|withText" />
+        <item android:id="@id/page_inline_selection_convert" android:title="@string/page_inline_selection_convert" app:showAsAction="ifRoom|withText" />
+        <item android:id="@id/page_inline_selection_styles" android:title="@string/page_inline_selection_styles" app:showAsAction="ifRoom|withText" />
+        <item android:id="@id/page_inline_selection_indent" android:title="@string/page_inline_selection_indent" app:showAsAction="ifRoom|withText" />
+        <item android:id="@id/page_inline_selection_list" android:title="@string/page_inline_selection_list" app:showAsAction="ifRoom|withText" />
+        <item android:id="@id/page_inline_selection_learn" android:title="@string/page_inline_selection_add_to_user_dict" app:showAsAction="ifRoom|withText" />
+        <item android:id="@id/page_inline_selection_link" android:visible="@bool/enable_open_link_from_inline_selection" android:title="@string/page_inline_selection_link" app:showAsAction="ifRoom|withText" />
+    </group>
+    <group android:id="@id/page_inline_selection_ai_group">
+        <item android:id="@id/page_inline_selection_ai_summarize" android:title="@string/page_inline_selection_summarize" />
+        <item android:id="@id/page_inline_selection_ai_explain" android:title="@string/page_inline_selection_explain" />
+        <item android:id="@id/page_inline_selection_ai_quiz" android:title="@string/page_inline_selection_quiz" />
+    </group>
+    <group android:id="@id/page_inline_selection_styles_group">
+        <item android:id="@id/page_inline_selection_bold" android:title="@string/page_inline_selection_bold" app:showAsAction="ifRoom|withText" />
+        <item android:id="@id/page_inline_selection_underline" android:title="@string/page_inline_selection_underline" />
+        <item android:id="@id/page_inline_selection_double_underline" android:title="@string/page_inline_selection_double_underline" />
+        <item android:id="@id/page_inline_selection_strike_through" android:title="@string/page_inline_selection_strike_through" />
+        <item android:id="@id/page_inline_selection_highlight" android:title="@string/page_inline_selection_highlight" app:showAsAction="ifRoom|withText" />
+    </group>
+    <group android:id="@id/page_inline_selection_indent_group">
+        <item android:id="@id/page_inline_selection_indent_decrease" android:title="@string/page_inline_selection_indent_decrease" app:showAsAction="ifRoom|withText" />
+        <item android:id="@id/page_inline_selection_indent_increase" android:title="@string/page_inline_selection_indent_increase" app:showAsAction="ifRoom|withText" />
+    </group>
+    <group android:id="@id/page_inline_selection_list_group">
+        <item android:id="@id/page_inline_selection_list_as_unordered" android:title="@string/page_inline_selection_list_as_unordered" />
+        <item android:id="@id/page_inline_selection_list_as_ordered" android:title="@string/page_inline_selection_list_as_ordered" />
+        <item android:id="@id/page_inline_selection_list_as_checklist" android:title="@string/page_inline_selection_list_as_checklist" />
+        <item android:id="@id/page_inline_selection_list_as_text" android:title="@string/page_inline_selection_list_as_text" />
+    </group>
+    <group android:id="@id/page_inline_selection_copy_as_group">
+        <item android:id="@id/page_inline_selection_copy_as_text" android:title="@string/page_inline_selection_copy_as_text" />
+        <item android:id="@id/page_inline_selection_copy_as_sketch" android:title="@string/page_inline_selection_copy_as_sketch" />
+        <item android:id="@id/page_inline_selection_copy_as_math" android:title="@string/page_inline_selection_copy_as_math" />
+        <item android:id="@id/page_inline_selection_copy_as_diagram" android:title="@string/page_inline_selection_copy_as_diagram" />
+    </group>
+</menu>

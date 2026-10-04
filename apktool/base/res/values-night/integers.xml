@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="prompter_word_normal_alpha">0x7a</integer>
+    <integer name="search_hit_alpha">0x5c</integer>
+    <integer name="search_selected_hit_alpha">0x99</integer>
+    <integer name="smartguide_background_alpha">0xeb</integer>
+</resources>

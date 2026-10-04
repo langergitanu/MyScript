@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="bottom" android:id="@id/view_micro_survey_point_multiple_card" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="0.0dp" app:cardElevation="0.0dp" app:cardMaxElevation="0.0dp" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/view_micro_survey_point_multiple_container" android:background="@drawable/survicate_micro_survey_background_rounded" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.survicate.surveys.presentation.widget.MicroSurveyHeader android:id="@id/view_micro_survey_point_multiple_survey_header" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <androidx.core.widget.NestedScrollView android:scrollbarThumbVertical="@drawable/survicate_micro_scroll_bar_thumb" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="@dimen/survicate_micro_space_xs" android:fillViewport="true" android:layout_weight="1.0" android:overScrollMode="ifContentScrolls">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:id="@id/view_micro_survey_point_multiple_wrapper" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <com.survicate.surveys.presentation.multiple.micro.MicroSurveyPointMultipleContentView android:id="@id/view_micro_survey_point_multiple_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/survicate_micro_page_padding" />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <com.survicate.surveys.presentation.widget.MicroDisclaimerView android:id="@id/view_micro_survey_point_multiple_disclaimer" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                    <com.survicate.surveys.presentation.widget.MicroSubmitView android:id="@id/view_micro_survey_point_multiple_submit" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                    <com.survicate.surveys.presentation.widget.MicroSurveyFooter android:id="@id/view_micro_survey_point_multiple_footer" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

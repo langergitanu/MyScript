@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:key="@string/pref_sync_sign_in_category_key" app:isPreferenceVisible="false">
+        <com.myscript.android.utils.preference.SummaryPreference android:summary="@string/pref_sync_login_required" app:iconSpaceReserved="false" />
+        <com.myscript.android.utils.preference.ButtonPreference android:title="@string/sign_in" android:key="@string/pref_sync_sign_in_key" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="@string/pref_sync_pending_activation_category_key" app:isPreferenceVisible="false">
+        <com.myscript.android.utils.preference.SummaryPreference android:key="@string/pref_sync_pending_activation_summary_key" app:iconSpaceReserved="false" />
+        <com.myscript.android.utils.preference.ButtonPreference android:title="@string/sso_resend_button" android:key="@string/pref_sync_resend_key" app:iconSpaceReserved="false" />
+        <com.myscript.android.utils.preference.ButtonPreference android:title="@string/sign_out" android:key="@string/pref_sync_sign_out_key" app:iconSpaceReserved="false" app:titleColor="@color/color_sign_out" />
+    </PreferenceCategory>
+    <com.myscript.android.utils.preference.SummaryPreference android:key="@string/pref_sync_free_usage_limitation_key" android:summary="@string/pref_sync_free_usage_limitation_summary" app:iconSpaceReserved="false" app:isPreferenceVisible="true" />
+    <PreferenceCategory android:key="@string/pref_sync_cloud_choose_category_key" app:isPreferenceVisible="false">
+        <com.myscript.android.utils.preference.SummaryPreference android:summary="@string/please_connect_account" />
+        <Preference android:icon="@drawable/ic_dropbox" android:title="@string/cloud_provider_dropbox" android:key="@string/pref_cloudsync_dropbox_key" />
+        <Preference android:icon="@drawable/ic_gdrive" android:title="@string/cloud_provider_gdrive" android:key="@string/pref_cloudsync_gdrive_key" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="@string/pref_sync_category_key" app:isPreferenceVisible="false">
+        <com.myscript.nebo.settings.CloudProviderPreference android:title=" " android:key="@string/pref_sync_cloud_provider_key" android:summary=" " />
+        <com.myscript.android.utils.preference.ButtonPreference android:key="@string/pref_sync_cloud_disconnect_key" />
+        <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_autosync_enabled_label" android:key="@string/pref_autosync_enabled_key" android:summary="@string/pref_autosync_enabled_desc" android:defaultValue="@bool/pref_enable_autosync_enabled_default" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_account_in_apps_category_title" android:key="@string/pref_sync_in_apps_category_key" app:iconSpaceReserved="false" app:isPreferenceVisible="false">
+        <com.myscript.android.utils.preference.InAppPreference android:key="@string/pref_account_in_apps_freemium_key" app:iconSpaceReserved="false" app:inAppIcon="@drawable/ic_freemium_in_app_icon" app:inAppSubtitle="@string/pref_account_in_apps_freemium_subtitle" app:inAppTitle="@string/pref_account_in_apps_freemium_title" />
+        <com.myscript.android.utils.preference.SummaryPreference android:key="@string/pref_account_in_apps_freemium_summary_key" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/survicate_micro_space_md" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/survicate_micro_space_md"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:id="@id/view_micro_comment_label_space" android:layout_width="match_parent" android:layout_height="@dimen/survicate_micro_space_md" />
+    <TextView android:textAppearance="@style/Widget.Survicate.StandaloneComment.Label.Micro" android:id="@id/view_micro_comment_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:labelFor="@id/view_micro_comment_input_text" />
+    <EditText android:scrollbarThumbVertical="@drawable/survicate_micro_scroll_bar_thumb_input" android:scrollbarStyle="outsideOverlay" android:gravity="start|top" android:id="@id/view_micro_comment_input_text" android:padding="@dimen/survicate_micro_space_s" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="@dimen/survicate_micro_input_height_comment_standalone" android:layout_marginTop="@dimen/survicate_micro_space_md" android:inputType="textMultiLine" android:textAlignment="gravity" android:importantForAutofill="no" />
+</LinearLayout>

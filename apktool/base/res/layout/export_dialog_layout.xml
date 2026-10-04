@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/export_dialog_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="?dialogPreferredPadding" android:paddingEnd="?dialogPreferredPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/export_dialog_configuration_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="?colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/export_configuration_format" style="@style/Preference.Category.Material" />
+                <androidx.appcompat.widget.AppCompatSpinner android:id="@id/export_type" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:textColor="?colorPrimary" android:id="@id/export_options_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/export_configuration_options" style="@style/Preference.Category.Material" />
+                <com.google.android.material.switchmaterial.SwitchMaterial android:id="@id/export_annotation_options" android:layout_width="match_parent" android:layout_height="?listPreferredItemHeightSmall" android:text="@string/export_configuration_include_annotations" />
+                <com.google.android.material.switchmaterial.SwitchMaterial android:id="@id/export_flatten_options" android:layout_width="match_parent" android:layout_height="?listPreferredItemHeightSmall" android:text="@string/export_configuration_flatten_annotations" />
+                <com.google.android.material.switchmaterial.SwitchMaterial android:id="@id/export_background_color_options" android:layout_width="match_parent" android:layout_height="?listPreferredItemHeightSmall" android:text="@string/export_configuration_include_background_color" />
+                <com.google.android.material.switchmaterial.SwitchMaterial android:id="@id/export_background_pattern_options" android:layout_width="match_parent" android:layout_height="?listPreferredItemHeightSmall" android:text="@string/export_configuration_include_background_pattern" />
+                <com.google.android.material.switchmaterial.SwitchMaterial android:id="@id/export_combine_options" android:layout_width="match_parent" android:layout_height="?listPreferredItemHeightSmall" android:text="@string/export_configuration_combine_into_one_document" />
+                <TextView android:textColor="?colorPrimary" android:id="@id/export_filename_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/export_configuration_filename" style="@style/Preference.Category.Material" />
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/export_filename_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:errorEnabled="true" app:hintEnabled="false">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@id/export_filename" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/untitled_page" android:maxLines="1" android:inputType="text" android:imeOptions="actionDone" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/export_dialog_progress_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="?dialogPreferredPadding">
+                <ProgressBar android:id="@id/export_progress_bar" android:padding="32.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+                <TextView android:id="@id/export_description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="end" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp">
+        <Button android:layout_gravity="end" android:id="@id/cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_cancel" style="?android:buttonBarNegativeButtonStyle" />
+        <Button android:layout_gravity="end" android:id="@id/export_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/export_dialog_confirmation" style="?android:buttonBarPositiveButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceListItem" android:gravity="center_vertical" android:id="@id/item_spinner_dropdown_title" android:background="?colorBackgroundFloating" android:layout_width="match_parent" android:layout_height="?listPreferredItemHeight" android:foreground="?selectableItemBackground" android:paddingStart="?listPreferredItemPaddingStart" android:paddingEnd="?listPreferredItemPaddingEnd"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

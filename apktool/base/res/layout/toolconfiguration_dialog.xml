@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:colorBackgroundFloating" android:paddingBottom="?dialogPreferredPadding" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="?actionBarTheme" android:orientation="vertical" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="0.0dp" app:elevation="0.0dp">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolconfiguration_toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:navigationIcon="@drawable/ic_arrow_back" app:title="@string/thickness_panel_title" style="?toolbarStyle" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/toolconfiguration_options_buttons" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="8.0dp" android:minWidth="300.0dp" android:paddingStart="?dialogPreferredPadding" android:paddingEnd="?dialogPreferredPadding" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/toolconfiguration_thickness_buttons" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="4.0dp" android:layout_marginBottom="8.0dp" android:paddingStart="?dialogPreferredPadding" android:paddingEnd="?dialogPreferredPadding" />
+    <com.google.android.material.card.MaterialCardView android:id="@id/toolconfiguration_test_here_panel" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="8.0dp" android:minWidth="@dimen/thickness_picker_width_large" android:minHeight="@dimen/thickness_picker_height_large" android:layout_weight="1.0" android:layout_marginStart="?dialogPreferredPadding" android:layout_marginEnd="?dialogPreferredPadding" app:cardCornerRadius="8.0dp" app:cardElevation="0.0dp" app:cardUseCompatPadding="false" app:strokeColor="@color/ghostBlack" app:strokeWidth="0.5dp">
+        <include layout="@layout/toolconfiguration_dialog_ink_test_view" />
+        <TextView android:textAppearance="?textAppearanceCaption" android:layout_gravity="center|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:text="@string/test_here" />
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

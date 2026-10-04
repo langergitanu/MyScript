@@ -1,0 +1,96 @@
+package androidx.compose.p004ui.graphics;
+
+import kotlin.Metadata;
+import kotlin.jvm.JvmInline;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+
+/* JADX INFO: compiled from: GraphicsLayerModifier.kt */
+/* JADX INFO: loaded from: classes2.dex */
+@Metadata(m1598d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0087@\u0018\u0000 \f2\u00020\u0001:\u0001\fB\u0011\b\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u0014\u0010\u0006\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\u0001HÖ\u0083\u0004J\n\u0010\t\u001a\u00020\u0003HÖ\u0081\u0004J\n\u0010\n\u001a\u00020\u000bHÖ\u0081\u0004R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000\u0088\u0001\u0002\u0092\u0001\u00020\u0003¨\u0006\r"}, m1599d2 = {"Landroidx/compose/ui/graphics/CompositingStrategy;", "", "value", "", "constructor-impl", "(I)I", "equals", "", "other", "hashCode", "toString", "", "Companion", "ui"}, m1600k = 1, m1601mv = {2, 1, 0}, m1603xi = 48)
+@JvmInline
+public final class CompositingStrategy {
+    private final int value;
+
+    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = new Companion(null);
+    private static final int Auto = m8233constructorimpl(0);
+    private static final int Offscreen = m8233constructorimpl(1);
+    private static final int ModulateAlpha = m8233constructorimpl(2);
+
+    /* JADX INFO: renamed from: box-impl, reason: not valid java name */
+    public static final /* synthetic */ CompositingStrategy m8232boximpl(int i) {
+        return new CompositingStrategy(i);
+    }
+
+    /* JADX INFO: renamed from: constructor-impl, reason: not valid java name */
+    public static int m8233constructorimpl(int i) {
+        return i;
+    }
+
+    /* JADX INFO: renamed from: equals-impl, reason: not valid java name */
+    public static boolean m8234equalsimpl(int i, Object obj) {
+        return (obj instanceof CompositingStrategy) && i == ((CompositingStrategy) obj).getValue();
+    }
+
+    /* JADX INFO: renamed from: equals-impl0, reason: not valid java name */
+    public static final boolean m8235equalsimpl0(int i, int i2) {
+        return i == i2;
+    }
+
+    /* JADX INFO: renamed from: hashCode-impl, reason: not valid java name */
+    public static int m8236hashCodeimpl(int i) {
+        return Integer.hashCode(i);
+    }
+
+    /* JADX INFO: renamed from: toString-impl, reason: not valid java name */
+    public static String m8237toStringimpl(int i) {
+        return "CompositingStrategy(value=" + i + ')';
+    }
+
+    public boolean equals(Object other) {
+        return m8234equalsimpl(this.value, other);
+    }
+
+    public int hashCode() {
+        return m8236hashCodeimpl(this.value);
+    }
+
+    public String toString() {
+        return m8237toStringimpl(this.value);
+    }
+
+    /* JADX INFO: renamed from: unbox-impl, reason: not valid java name and from getter */
+    public final /* synthetic */ int getValue() {
+        return this.value;
+    }
+
+    private /* synthetic */ CompositingStrategy(int i) {
+        this.value = i;
+    }
+
+    /* JADX INFO: compiled from: GraphicsLayerModifier.kt */
+    @Metadata(m1598d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\b\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u0013\u0010\u0004\u001a\u00020\u0005¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\u0006\u0010\u0007R\u0013\u0010\t\u001a\u00020\u0005¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\n\u0010\u0007R\u0013\u0010\u000b\u001a\u00020\u0005¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\f\u0010\u0007¨\u0006\r"}, m1599d2 = {"Landroidx/compose/ui/graphics/CompositingStrategy$Companion;", "", "<init>", "()V", "Auto", "Landroidx/compose/ui/graphics/CompositingStrategy;", "getAuto--NrFUSI", "()I", "I", "Offscreen", "getOffscreen--NrFUSI", "ModulateAlpha", "getModulateAlpha--NrFUSI", "ui"}, m1600k = 1, m1601mv = {2, 1, 0}, m1603xi = 48)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
+
+        /* JADX INFO: renamed from: getAuto--NrFUSI, reason: not valid java name */
+        public final int m8239getAutoNrFUSI() {
+            return CompositingStrategy.Auto;
+        }
+
+        /* JADX INFO: renamed from: getOffscreen--NrFUSI, reason: not valid java name */
+        public final int m8241getOffscreenNrFUSI() {
+            return CompositingStrategy.Offscreen;
+        }
+
+        /* JADX INFO: renamed from: getModulateAlpha--NrFUSI, reason: not valid java name */
+        public final int m8240getModulateAlphaNrFUSI() {
+            return CompositingStrategy.ModulateAlpha;
+        }
+    }
+}

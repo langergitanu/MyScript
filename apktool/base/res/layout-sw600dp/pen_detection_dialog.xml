@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="?dialogPreferredPadding" android:paddingEnd="?dialogPreferredPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/pen_detection_area_container" android:background="@drawable/dashed_border_rounded" android:layout_width="match_parent" android:layout_height="200.0dp" android:layout_marginTop="24.0dp">
+        <FrameLayout android:id="@id/pen_detection_panel_user_input" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textColor="?android:textColorSecondary" android:layout_gravity="center" android:id="@id/pen_detection_panel_write_here" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pen_panel_detection_area_write_here" />
+            <com.myscript.nebo.penpanel.InkTestView android:id="@id/pen_detection_area" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/pen_detection_panel_done" android:visibility="gone" android:layout_width="64.0dp" android:layout_height="64.0dp" android:src="@drawable/ic_check_validation_animated" app:tint="@color/PenGreen" />
+    </FrameLayout>
+    <Button android:layout_gravity="end" android:id="@id/pen_detection_dialog_negative_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pen_panel_detection_explanation_not_now" style="?android:buttonBarButtonStyle" />
+</LinearLayout>

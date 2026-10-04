@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <stroke android:width="1.0dp" android:color="@android:color/transparent" />
+                    <size android:height="@dimen/survicate_micro_question_radio_button_size" android:width="@dimen/survicate_micro_question_radio_button_size" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item android:left="@dimen/survicate_micro_question_radio_button_focus_padding" android:top="@dimen/survicate_micro_question_radio_button_focus_padding" android:right="@dimen/survicate_micro_question_radio_button_focus_padding" android:bottom="@dimen/survicate_micro_question_radio_button_focus_padding">
+                <shape android:shape="oval">
+                    <stroke android:width="@dimen/survicate_micro_question_radio_button_outer_circle_stroke_width" android:color="#0000ff" />
+                    <size android:height="@dimen/survicate_micro_question_radio_button_outer_circle_size" android:width="@dimen/survicate_micro_question_radio_button_outer_circle_size" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item android:left="@dimen/survicate_micro_question_radio_button_outer_circle_padding" android:top="@dimen/survicate_micro_question_radio_button_outer_circle_padding" android:right="@dimen/survicate_micro_question_radio_button_outer_circle_padding" android:bottom="@dimen/survicate_micro_question_radio_button_outer_circle_padding">
+                <shape android:shape="oval">
+                    <size android:height="@dimen/survicate_micro_question_radio_button_inner_circle_size" android:width="@dimen/survicate_micro_question_radio_button_inner_circle_size" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <stroke android:width="1.0dp" android:color="@android:color/transparent" />
+                    <size android:height="@dimen/survicate_micro_question_radio_button_size" android:width="@dimen/survicate_micro_question_radio_button_size" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item android:left="@dimen/survicate_micro_question_radio_button_focus_padding" android:top="@dimen/survicate_micro_question_radio_button_focus_padding" android:right="@dimen/survicate_micro_question_radio_button_focus_padding" android:bottom="@dimen/survicate_micro_question_radio_button_focus_padding">
+                <shape android:shape="oval">
+                    <stroke android:width="@dimen/survicate_micro_question_radio_button_outer_circle_stroke_width" android:color="#0000ff" />
+                    <size android:height="@dimen/survicate_micro_question_radio_button_outer_circle_size" android:width="@dimen/survicate_micro_question_radio_button_outer_circle_size" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

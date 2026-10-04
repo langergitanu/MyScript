@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:color="@color/uoc_critical" app:state_uoc_critical="true" />
+    <item android:color="@color/uoc_warning" app:state_uoc_warning="true" />
+    <item android:color="@color/uoc_watch" app:state_uoc_watch="true" />
+    <item android:color="@color/uoc_ok" app:state_uoc_ok="true" />
+    <item android:color="@color/uoc_unknown" />
+</selector>

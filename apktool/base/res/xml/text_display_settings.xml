@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.myscript.android.utils.preference.SummaryPreference android:summary="@string/pref_text_display_freeform_typeset_not_applying_no_caps" app:iconSpaceReserved="false" />
+    <com.myscript.android.utils.preference.RangePreference android:key="@string/pref_font_size_key" app:biggerDrawable="@drawable/ic_textsizebigger_24" app:defaultRangeValue="@dimen/pref_font_size_default_value" app:iconSpaceReserved="false" app:maxRangeValue="@dimen/pref_font_size_max_value" app:minRangeValue="@dimen/pref_font_size_min_value" app:rangeStepSize="1.0" app:smallerDrawable="@drawable/ic_textsizesmaller_24" />
+    <com.myscript.android.utils.preference.RangePreference android:key="@string/pref_line_height_key" app:biggerDrawable="@drawable/ic_lineheightbigger_24" app:defaultRangeValue="@dimen/pref_line_height_default_value" app:iconSpaceReserved="false" app:maxRangeValue="@dimen/pref_line_height_max_value" app:minRangeValue="@dimen/pref_line_height_min_value" app:rangeStepSize="0.1" app:smallerDrawable="@drawable/ic_lineheightsmaller_24" />
+    <com.myscript.android.utils.preference.ButtonPreference android:title="@string/pref_text_display_reset_label" android:key="@string/pref_text_display_reset_key" app:iconSpaceReserved="false" />
+    <com.myscript.nebo.settings.PagePreviewPreference android:key="@string/pref_pagepreview_key" app:neboAssetPath="notebooks/lpu-preview.nebo" />
+</PreferenceScreen>

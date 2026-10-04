@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="confirm_delete_notebook_cloud_message">
+        <item quantity="one">It will be permanently deleted from Nebo and %s.</item>
+        <item quantity="other">They will be permanently deleted from Nebo and %s.</item>
+    </plurals>
+    <plurals name="confirm_delete_notebook_message">
+        <item quantity="one">It will be permanently deleted from Nebo.</item>
+        <item quantity="other">They will be permanently deleted from Nebo.</item>
+    </plurals>
+    <plurals name="delete_trashed_pages_no_cloud">
+        <item quantity="one">The selected item will be permanently deleted from MyScript Notes.</item>
+        <item quantity="other">The selected items will be permanently deleted from MyScript Notes.</item>
+    </plurals>
+    <plurals name="delete_trashed_pages_with_cloud">
+        <item quantity="one">The selected item will be permanently deleted from MyScript Notes and %s.</item>
+        <item quantity="other">The selected items will be permanently deleted from MyScript Notes and %s.</item>
+    </plurals>
+    <plurals name="folder_selected_count">
+        <item quantity="one">%d folder</item>
+        <item quantity="other">%d folders</item>
+    </plurals>
+    <plurals name="freemium_banner_trial_title">
+        <item quantity="one">Only %d day left!</item>
+        <item quantity="other">Only %d days left!</item>
+    </plurals>
+    <plurals name="freemium_pages_count">
+        <item quantity="one">%d page left</item>
+        <item quantity="other">%d pages left</item>
+    </plurals>
+    <plurals name="inspector_files_restoration_done">
+        <item quantity="one">%d element restored.</item>
+        <item quantity="other">%d elements restored.</item>
+    </plurals>
+    <plurals name="manage_pages_delete_confirm_message">
+        <item quantity="one">"You're about to delete this page, this action can’t be undone."</item>
+        <item quantity="other">"You're about to delete these pages, this action can’t be undone."</item>
+    </plurals>
+    <plurals name="manage_pages_delete_confirm_title">
+        <item quantity="one">Delete page</item>
+        <item quantity="other">Delete pages</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="note_selected_count">
+        <item quantity="one">%d note</item>
+        <item quantity="other">%d notes</item>
+    </plurals>
+    <plurals name="notebook_selected_count">
+        <item quantity="one">%d notebook</item>
+        <item quantity="other">%d notebooks</item>
+    </plurals>
+    <plurals name="page_selected_count">
+        <item quantity="one">%d page</item>
+        <item quantity="other">%d pages</item>
+    </plurals>
+    <plurals name="resourcemanager_available_section_title">
+        <item quantity="one">Available (%d)</item>
+        <item quantity="other">Available (%d)</item>
+    </plurals>
+    <plurals name="resourcemanager_installed_section_title">
+        <item quantity="one">Installed (%d)</item>
+        <item quantity="other">Installed (%d)</item>
+    </plurals>
+    <plurals name="resourcemanager_suggested_section_title">
+        <item quantity="one">Suggested (%d)</item>
+        <item quantity="other">Suggested (%d)</item>
+    </plurals>
+    <plurals name="search_hits">
+        <item quantity="one">%d result</item>
+        <item quantity="other">%d results</item>
+    </plurals>
+    <plurals name="search_hits_pages">
+        <item quantity="one">%d page found</item>
+        <item quantity="other">%d pages found</item>
+    </plurals>
+    <plurals name="search_result_count">
+        <item quantity="one">%d result</item>
+        <item quantity="other">%d results</item>
+    </plurals>
+    <plurals name="search_result_folders">
+        <item quantity="one">%d folder</item>
+        <item quantity="other">%d folders</item>
+    </plurals>
+    <plurals name="search_result_notebooks">
+        <item quantity="one">%d notebook</item>
+        <item quantity="other">%d notebooks</item>
+    </plurals>
+    <plurals name="selected_pages">
+        <item quantity="one">%d selected</item>
+        <item quantity="other">%d selected</item>
+    </plurals>
+    <plurals name="sync_header_folders_syncing">
+        <item quantity="one">Syncing %d folder…</item>
+        <item quantity="other">Syncing %d folders…</item>
+    </plurals>
+    <plurals name="sync_header_folders_to_sync">
+        <item quantity="one">%d folder to update</item>
+        <item quantity="other">%d folders to update</item>
+    </plurals>
+    <plurals name="sync_header_syncing_notebooks">
+        <item quantity="one">Syncing %d notebook…</item>
+        <item quantity="other">Syncing %d notebooks…</item>
+    </plurals>
+    <plurals name="sync_header_to_sync">
+        <item quantity="one">%d notebook to update</item>
+        <item quantity="other">%d notebooks to update</item>
+    </plurals>
+    <plurals name="sync_note_conflict_message">
+        <item quantity="one">One note had a conflict. The conflicting copy has been saved alongside the original note.</item>
+        <item quantity="other">%d notes had conflicts. Conflicting copies have been saved alongside the original notes.</item>
+    </plurals>
+    <plurals name="sync_page_conflict_message">
+        <item quantity="one">One page had a conflict. The conflicting copy has been saved alongside the original page.</item>
+        <item quantity="other">%d pages had conflicts. Conflicting copies have been saved alongside the original pages.</item>
+    </plurals>
+    <plurals name="trashed_folder_detail_remaining_pages">
+        <item quantity="one">%d remaining in the folder.</item>
+        <item quantity="other">%d remaining in the folder.</item>
+    </plurals>
+    <plurals name="trashed_notebook_detail_deleted_notes">
+        <item quantity="one">%d note deleted,</item>
+        <item quantity="other">%d notes deleted,</item>
+    </plurals>
+    <plurals name="trashed_notebook_detail_deleted_pages">
+        <item quantity="one">%d page deleted,</item>
+        <item quantity="other">%d pages deleted,</item>
+    </plurals>
+    <plurals name="trashed_notebook_detail_remaining_pages">
+        <item quantity="one">%d remaining in the notebook.</item>
+        <item quantity="other">%d remaining in the notebook.</item>
+    </plurals>
+    <plurals name="trashed_notebook_detail_text">
+        <item quantity="one">%d deleted page</item>
+        <item quantity="other">%d deleted pages</item>
+    </plurals>
+    <plurals name="trashed_notes_detail_text">
+        <item quantity="one">%d deleted note</item>
+        <item quantity="other">%d deleted notes</item>
+    </plurals>
+    <plurals name="user_dict_selected_words">
+        <item quantity="one">%d word</item>
+        <item quantity="other">%d words</item>
+    </plurals>
+    <plurals name="user_dictionary_add_word_dialog_error_contains_forbidden_char">
+        <item quantity="one">%s is not supported.</item>
+        <item quantity="other">%s are not supported.</item>
+    </plurals>
+</resources>

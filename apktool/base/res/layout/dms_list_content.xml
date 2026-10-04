@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/dms_coordinator" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="?android:dividerHorizontal" android:showDividers="middle">
+            <com.myscript.nebo.dms.views.SearchBar android:id="@id/search_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/secondary_toolbar_height" />
+            <com.myscript.nebo.dms.views.SyncToolbar android:id="@id/sync_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/secondary_toolbar_height" />
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/dms_list_content_refresh_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.myscript.nebo.dms.expandlist.WorkaroundRecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/dms_recycler_view" android:scrollbars="vertical" android:fadingEdge="vertical" android:fadingEdgeLength="16.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" android:requiresFadingEdge="vertical" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/dms_list_no_notebooks" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:src="@drawable/ic_collection_special" style="@style/GridEmptyState.Image" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dms_list_no_notebooks_title" style="@style/GridEmptyState.Title" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dms_list_empty_subtext" style="@style/GridEmptyState.Subtitle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/dms_list_search_no_results" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:src="@drawable/ic_search" style="@style/GridEmptyState.Image" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dms_list_search_no_results_title" style="@style/GridEmptyState.Title" />
+                    <TextView android:id="@id/dms_list_search_no_results_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dms_list_search_no_results_subtext" style="@style/GridEmptyState.Subtitle" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <androidx.compose.ui.platform.ComposeView android:id="@id/discoverability_tooltip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

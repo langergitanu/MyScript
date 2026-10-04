@@ -1,0 +1,65 @@
+Manifest-Version: 1.0
+
+Name: AndroidManifest.xml
+SHA1-Digest: pwjcO/AG7cX1mVXUfQGmkFrdfRk=
+
+Name: lib/arm64-v8a/libMyScript2D.so
+SHA1-Digest: +vU3+cslWglMnk9gSLfeF3dl580=
+
+Name: lib/arm64-v8a/libMyScriptAnalyzer.so
+SHA1-Digest: mBF49AzDrd5YYHk+t7OvnLyMneI=
+
+Name: lib/arm64-v8a/libMyScriptDocument.so
+SHA1-Digest: BP099Notqt9X78URlXkxE4aWcWM=
+
+Name: lib/arm64-v8a/libMyScriptEngine.so
+SHA1-Digest: bFekDskwBsirWnsNCAu+MzMGyFk=
+
+Name: lib/arm64-v8a/libMyScriptGesture.so
+SHA1-Digest: EsSsC0xKlhB1WUe2fay/KtsZdrg=
+
+Name: lib/arm64-v8a/libMyScriptInk.so
+SHA1-Digest: +qXpS3l8aGnuas5p8TZAbSfhwl8=
+
+Name: lib/arm64-v8a/libMyScriptMath.so
+SHA1-Digest: t8aPUfZCM9FlRlRCLTxnrFTIjXM=
+
+Name: lib/arm64-v8a/libMyScriptPrediction.so
+SHA1-Digest: 7t/N8hps7U2ZDR0MbAX3wcrBG5Q=
+
+Name: lib/arm64-v8a/libMyScriptShape.so
+SHA1-Digest: uDXA1oXfjwvn4gB9JCG9UrDq4oo=
+
+Name: lib/arm64-v8a/libMyScriptText.so
+SHA1-Digest: 0qhgDDsC0LzjoYAceEHNXgNDFTg=
+
+Name: lib/arm64-v8a/libNebo.so
+SHA1-Digest: GPbEagkh7iUaSLtrTXPaqayFXko=
+
+Name: lib/arm64-v8a/libPDFNetC.so
+SHA1-Digest: AzUjVTVcQZ8Bf1IJ5RVZSDCDGUk=
+
+Name: lib/arm64-v8a/libandroidx.graphics.path.so
+SHA1-Digest: 18F/y0SzCm7+idQ2qhAqvlLgCKY=
+
+Name: lib/arm64-v8a/libc++_shared.so
+SHA1-Digest: zEoHUSkhjbTUndY9APOjR5TaHVw=
+
+Name: lib/arm64-v8a/libcrashlytics-common.so
+SHA1-Digest: xU9JA4rcDgayOrNYXO2AWOzR/Po=
+
+Name: lib/arm64-v8a/libcrashlytics-handler.so
+SHA1-Digest: Ho6Rfre9QViW110FkNmtSIWS0jQ=
+
+Name: lib/arm64-v8a/libcrashlytics-trampoline.so
+SHA1-Digest: CvGEssSchhYidW7r6diAlnnvMYk=
+
+Name: lib/arm64-v8a/libcrashlytics.so
+SHA1-Digest: ipE49GWonUJynYXiydtaxI8fjCU=
+
+Name: lib/arm64-v8a/libdatastore_shared_counter.so
+SHA1-Digest: Atv5pNo1ZK1JuJjlPrA6AfpfUB8=
+
+Name: stamp-cert-sha256
+SHA1-Digest: 5vTkm69vqAbusD/fho7oWwc7j+I=
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical" android:id="@id/tag_menu_cardview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/text_menu_width" card_view:cardElevation="8.0dp" card_view:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/tag_menu_scrollview" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/tag_menu_linear_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/text_menu_width">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tag_h1" android:background="@drawable/tag_menu_entry_background" android:clickable="true" android:layout_width="match_parent" android:layout_height="48.0dp" android:foreground="?selectableItemBackground">
+                <ImageView android:id="@id/tag_picto_h1" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="12.0dp" android:src="@drawable/h1" android:tint="?colorAccent" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/heading_1" android:paddingEnd="12.0dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tag_h2" android:background="@drawable/tag_menu_entry_background" android:clickable="true" android:layout_width="match_parent" android:layout_height="48.0dp" android:foreground="?selectableItemBackground">
+                <ImageView android:id="@id/tag_picto_h2" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="12.0dp" android:src="@drawable/h2" android:tint="?colorAccent" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/heading_2" android:paddingEnd="12.0dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tag_p" android:background="@drawable/tag_menu_entry_background" android:clickable="true" android:layout_width="match_parent" android:layout_height="48.0dp" android:foreground="?selectableItemBackground">
+                <ImageView android:id="@id/tag_picto_p" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="12.0dp" android:src="@drawable/paragraph" android:tint="?colorAccent" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paragraph" android:paddingEnd="12.0dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tag_unordered_list" android:background="@drawable/tag_menu_entry_background" android:clickable="true" android:layout_width="match_parent" android:layout_height="48.0dp" android:foreground="?selectableItemBackground">
+                <ImageView android:id="@id/tag_picto_unordered_list" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="12.0dp" android:src="@drawable/ic_tag_listbullet" android:tint="?colorAccent" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unordered_list" android:paddingEnd="12.0dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tag_ordered_list" android:background="@drawable/tag_menu_entry_background" android:clickable="true" android:layout_width="match_parent" android:layout_height="48.0dp" android:foreground="?selectableItemBackground">
+                <ImageView android:id="@id/tag_picto_ordered_list" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="12.0dp" android:src="@drawable/ic_tag_listnumber" android:tint="?colorAccent" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ordered_list" android:paddingEnd="12.0dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tag_check_list" android:background="@drawable/tag_menu_entry_background" android:clickable="true" android:layout_width="match_parent" android:layout_height="48.0dp" android:foreground="?selectableItemBackground">
+                <ImageView android:id="@id/tag_picto_check_list" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_margin="12.0dp" android:src="@drawable/ic_tag_listcheck" android:tint="?colorAccent" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/check_list" android:paddingEnd="12.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

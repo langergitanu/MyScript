@@ -1,0 +1,36 @@
+package androidx.compose.foundation.text.modifiers;
+
+import androidx.compose.foundation.text.TextDelegateKt;
+import androidx.compose.p004ui.text.style.TextOverflow;
+import androidx.compose.p004ui.unit.Constraints;
+import kotlin.Metadata;
+import kotlin.ranges.RangesKt;
+
+/* JADX INFO: compiled from: LayoutUtils.kt */
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(m1598d1 = {"\u0000&\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\n\u001a/\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0000¢\u0006\u0004\b\t\u0010\n\u001a/\u0010\u000b\u001a\u00020\f2\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0000¢\u0006\u0004\b\r\u0010\u000e\u001a'\u0010\u000f\u001a\u00020\f2\u0006\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0010\u001a\u00020\fH\u0000¢\u0006\u0004\b\u0011\u0010\u0012\"\u0018\u0010\u0013\u001a\u00020\u0004*\u00020\u00068@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u0014\u0010\u0015¨\u0006\u0016"}, m1599d2 = {"finalConstraints", "Landroidx/compose/ui/unit/Constraints;", "constraints", "softWrap", "", "overflow", "Landroidx/compose/ui/text/style/TextOverflow;", "maxIntrinsicWidth", "", "finalConstraints-tfFHcEY", "(JZIF)J", "finalMaxWidth", "", "finalMaxWidth-tfFHcEY", "(JZIF)I", "finalMaxLines", "maxLinesIn", "finalMaxLines-xdlQI24", "(ZII)I", "isEllipsis", "isEllipsis-MW5-ApA", "(I)Z", "foundation"}, m1600k = 2, m1601mv = {2, 1, 0}, m1603xi = 48)
+public final class LayoutUtilsKt {
+    /* JADX INFO: renamed from: finalConstraints-tfFHcEY, reason: not valid java name */
+    public static final long m3922finalConstraintstfFHcEY(long j, boolean z, int i, float f) {
+        return Constraints.INSTANCE.m10979fitPrioritizingWidthZbe2FdA(0, m3924finalMaxWidthtfFHcEY(j, z, i, f), 0, Constraints.m10969getMaxHeightimpl(j));
+    }
+
+    /* JADX INFO: renamed from: finalMaxWidth-tfFHcEY, reason: not valid java name */
+    public static final int m3924finalMaxWidthtfFHcEY(long j, boolean z, int i, float f) {
+        int iM10970getMaxWidthimpl = ((z || m3925isEllipsisMW5ApA(i)) && Constraints.m10966getHasBoundedWidthimpl(j)) ? Constraints.m10970getMaxWidthimpl(j) : Integer.MAX_VALUE;
+        return Constraints.m10972getMinWidthimpl(j) == iM10970getMaxWidthimpl ? iM10970getMaxWidthimpl : RangesKt.coerceIn(TextDelegateKt.ceilToIntPx(f), Constraints.m10972getMinWidthimpl(j), iM10970getMaxWidthimpl);
+    }
+
+    /* JADX INFO: renamed from: finalMaxLines-xdlQI24, reason: not valid java name */
+    public static final int m3923finalMaxLinesxdlQI24(boolean z, int i, int i2) {
+        if (z || !m3925isEllipsisMW5ApA(i)) {
+            return RangesKt.coerceAtLeast(i2, 1);
+        }
+        return 1;
+    }
+
+    /* JADX INFO: renamed from: isEllipsis-MW5-ApA, reason: not valid java name */
+    public static final boolean m3925isEllipsisMW5ApA(int i) {
+        return TextOverflow.m10943equalsimpl0(i, TextOverflow.INSTANCE.m10953getEllipsisgIe3tQ8()) || TextOverflow.m10943equalsimpl0(i, TextOverflow.INSTANCE.m10955getStartEllipsisgIe3tQ8()) || TextOverflow.m10943equalsimpl0(i, TextOverflow.INSTANCE.m10954getMiddleEllipsisgIe3tQ8());
+    }
+}

@@ -1,0 +1,123 @@
+package com.survicate.surveys.entities.survey.questions;
+
+import kotlin.Deprecated;
+import kotlin.DeprecationLevel;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.UnknownFieldException;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.CompositeDecoder;
+import kotlinx.serialization.encoding.CompositeEncoder;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
+import kotlinx.serialization.internal.BooleanSerializer;
+import kotlinx.serialization.internal.GeneratedSerializer;
+import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
+import kotlinx.serialization.internal.StringSerializer;
+
+/* JADX INFO: compiled from: DisclaimerSettings.kt */
+/* JADX INFO: loaded from: classes8.dex */
+@Metadata(m1598d1 = {"\u00006\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u0015\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00070\u0006¢\u0006\u0002\u0010\bJ\u000e\u0010\t\u001a\u00020\u00022\u0006\u0010\n\u001a\u00020\u000bJ\u0016\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0002R\u0011\u0010\u0011\u001a\u00020\u0012¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014¨\u0006\u0015"}, m1599d2 = {"com/survicate/surveys/entities/survey/questions/DisclaimerSettings.$serializer", "Lkotlinx/serialization/internal/GeneratedSerializer;", "Lcom/survicate/surveys/entities/survey/questions/DisclaimerSettings;", "<init>", "()V", "childSerializers", "", "Lkotlinx/serialization/KSerializer;", "()[Lkotlinx/serialization/KSerializer;", "deserialize", "decoder", "Lkotlinx/serialization/encoding/Decoder;", "serialize", "", "encoder", "Lkotlinx/serialization/encoding/Encoder;", "value", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "survicate-sdk_release"}, m1600k = 1, m1601mv = {2, 1, 0}, m1603xi = 48)
+@Deprecated(level = DeprecationLevel.HIDDEN, message = "This synthesized declaration should not be used directly")
+public /* synthetic */ class DisclaimerSettings$$serializer implements GeneratedSerializer<DisclaimerSettings> {
+    public static final DisclaimerSettings$$serializer INSTANCE;
+    private static final SerialDescriptor descriptor;
+
+    private DisclaimerSettings$$serializer() {
+    }
+
+    @Override // kotlinx.serialization.KSerializer, kotlinx.serialization.SerializationStrategy, kotlinx.serialization.DeserializationStrategy
+    public final SerialDescriptor getDescriptor() {
+        return descriptor;
+    }
+
+    static {
+        DisclaimerSettings$$serializer disclaimerSettings$$serializer = new DisclaimerSettings$$serializer();
+        INSTANCE = disclaimerSettings$$serializer;
+        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("com.survicate.surveys.entities.survey.questions.DisclaimerSettings", disclaimerSettings$$serializer, 5);
+        pluginGeneratedSerialDescriptor.addElement("title", false);
+        pluginGeneratedSerialDescriptor.addElement("description", false);
+        pluginGeneratedSerialDescriptor.addElement("checkbox_visible", false);
+        pluginGeneratedSerialDescriptor.addElement("checkbox_required", false);
+        pluginGeneratedSerialDescriptor.addElement("checkbox_label", false);
+        descriptor = pluginGeneratedSerialDescriptor;
+    }
+
+    @Override // kotlinx.serialization.internal.GeneratedSerializer
+    public final KSerializer<?>[] childSerializers() {
+        return new KSerializer[]{StringSerializer.INSTANCE, StringSerializer.INSTANCE, BooleanSerializer.INSTANCE, BooleanSerializer.INSTANCE, StringSerializer.INSTANCE};
+    }
+
+    @Override // kotlinx.serialization.DeserializationStrategy
+    public final DisclaimerSettings deserialize(Decoder decoder) {
+        String strDecodeStringElement;
+        boolean zDecodeBooleanElement;
+        String strDecodeStringElement2;
+        boolean z;
+        String str;
+        int i;
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        SerialDescriptor serialDescriptor = descriptor;
+        CompositeDecoder compositeDecoderBeginStructure = decoder.beginStructure(serialDescriptor);
+        if (compositeDecoderBeginStructure.decodeSequentially()) {
+            strDecodeStringElement = compositeDecoderBeginStructure.decodeStringElement(serialDescriptor, 0);
+            String strDecodeStringElement3 = compositeDecoderBeginStructure.decodeStringElement(serialDescriptor, 1);
+            boolean zDecodeBooleanElement2 = compositeDecoderBeginStructure.decodeBooleanElement(serialDescriptor, 2);
+            zDecodeBooleanElement = compositeDecoderBeginStructure.decodeBooleanElement(serialDescriptor, 3);
+            strDecodeStringElement2 = compositeDecoderBeginStructure.decodeStringElement(serialDescriptor, 4);
+            z = zDecodeBooleanElement2;
+            str = strDecodeStringElement3;
+            i = 31;
+        } else {
+            strDecodeStringElement = null;
+            String strDecodeStringElement4 = null;
+            String strDecodeStringElement5 = null;
+            boolean z2 = true;
+            boolean zDecodeBooleanElement3 = false;
+            boolean zDecodeBooleanElement4 = false;
+            int i2 = 0;
+            while (z2) {
+                int iDecodeElementIndex = compositeDecoderBeginStructure.decodeElementIndex(serialDescriptor);
+                if (iDecodeElementIndex == -1) {
+                    z2 = false;
+                } else if (iDecodeElementIndex == 0) {
+                    strDecodeStringElement = compositeDecoderBeginStructure.decodeStringElement(serialDescriptor, 0);
+                    i2 |= 1;
+                } else if (iDecodeElementIndex == 1) {
+                    strDecodeStringElement5 = compositeDecoderBeginStructure.decodeStringElement(serialDescriptor, 1);
+                    i2 |= 2;
+                } else if (iDecodeElementIndex == 2) {
+                    zDecodeBooleanElement4 = compositeDecoderBeginStructure.decodeBooleanElement(serialDescriptor, 2);
+                    i2 |= 4;
+                } else if (iDecodeElementIndex == 3) {
+                    zDecodeBooleanElement3 = compositeDecoderBeginStructure.decodeBooleanElement(serialDescriptor, 3);
+                    i2 |= 8;
+                } else {
+                    if (iDecodeElementIndex != 4) {
+                        throw new UnknownFieldException(iDecodeElementIndex);
+                    }
+                    strDecodeStringElement4 = compositeDecoderBeginStructure.decodeStringElement(serialDescriptor, 4);
+                    i2 |= 16;
+                }
+            }
+            zDecodeBooleanElement = zDecodeBooleanElement3;
+            strDecodeStringElement2 = strDecodeStringElement4;
+            z = zDecodeBooleanElement4;
+            str = strDecodeStringElement5;
+            i = i2;
+        }
+        compositeDecoderBeginStructure.endStructure(serialDescriptor);
+        return new DisclaimerSettings(i, strDecodeStringElement, str, z, zDecodeBooleanElement, strDecodeStringElement2, null);
+    }
+
+    @Override // kotlinx.serialization.SerializationStrategy
+    public final void serialize(Encoder encoder, DisclaimerSettings value) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        Intrinsics.checkNotNullParameter(value, "value");
+        SerialDescriptor serialDescriptor = descriptor;
+        CompositeEncoder compositeEncoderBeginStructure = encoder.beginStructure(serialDescriptor);
+        DisclaimerSettings.write$Self$survicate_sdk_release(value, compositeEncoderBeginStructure, serialDescriptor);
+        compositeEncoderBeginStructure.endStructure(serialDescriptor);
+    }
+}

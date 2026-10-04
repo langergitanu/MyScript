@@ -1,0 +1,24 @@
+package androidx.datastore.core;
+
+import androidx.exifinterface.media.ExifInterface;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.flow.Flow;
+
+/* JADX INFO: compiled from: InterProcessCoordinator.kt */
+/* JADX INFO: loaded from: classes2.dex */
+@Metadata(m1598d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\bf\u0018\u00002\u00020\u0001J2\u0010\u0007\u001a\u0002H\b\"\u0004\b\u0000\u0010\b2\u001c\u0010\t\u001a\u0018\b\u0001\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\b0\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u00010\nH¦@¢\u0006\u0002\u0010\fJ8\u0010\r\u001a\u0002H\b\"\u0004\b\u0000\u0010\b2\"\u0010\t\u001a\u001e\b\u0001\u0012\u0004\u0012\u00020\u000f\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\b0\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u000eH¦@¢\u0006\u0002\u0010\u0010J\u000e\u0010\u0011\u001a\u00020\u0012H¦@¢\u0006\u0002\u0010\u0013J\u000e\u0010\u0014\u001a\u00020\u0012H¦@¢\u0006\u0002\u0010\u0013R\u0018\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006ø\u0001\u0000\u0082\u0002\u0006\n\u0004\b!0\u0001¨\u0006\u0015À\u0006\u0001"}, m1599d2 = {"Landroidx/datastore/core/InterProcessCoordinator;", "", "updateNotifications", "Lkotlinx/coroutines/flow/Flow;", "", "getUpdateNotifications", "()Lkotlinx/coroutines/flow/Flow;", "lock", ExifInterface.GPS_DIRECTION_TRUE, "block", "Lkotlin/Function1;", "Lkotlin/coroutines/Continuation;", "(Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "tryLock", "Lkotlin/Function2;", "", "(Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "getVersion", "", "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "incrementAndGetVersion", "datastore-core"}, m1600k = 1, m1601mv = {2, 0, 0}, m1603xi = 48)
+public interface InterProcessCoordinator {
+    Flow<Unit> getUpdateNotifications();
+
+    Object getVersion(Continuation<? super Integer> continuation);
+
+    Object incrementAndGetVersion(Continuation<? super Integer> continuation);
+
+    <T> Object lock(Function1<? super Continuation<? super T>, ? extends Object> function1, Continuation<? super T> continuation);
+
+    <T> Object tryLock(Function2<? super Boolean, ? super Continuation<? super T>, ? extends Object> function2, Continuation<? super T> continuation);
+}

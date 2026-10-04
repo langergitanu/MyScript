@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:translationZ="0.0dp">
+        <LinearLayout android:orientation="vertical" android:id="@id/activity_main_app_bar_container" android:background="?android:colorBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar" android:id="@id/activity_main_app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:translationZ="0.0dp" android:elevation="@dimen/grid_toolbar_elevation" app:elevation="@dimen/grid_toolbar_elevation" app:layout_constraintBottom_toTopOf="@id/main_view_banner" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/main_activity_grid_guideline" app:layout_constraintTop_toTopOf="parent">
+                <FrameLayout android:id="@id/toolbar_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.google.android.material.appbar.MaterialToolbar android:gravity="center_vertical" android:id="@id/main_activity_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ThemeOverlay.App.Toolbar.Background">
+                        <com.myscript.nebo.grid.GridSearchView android:id="@id/main_search_view" android:layout_width="wrap_content" android:layout_height="match_parent" />
+                    </com.google.android.material.appbar.MaterialToolbar>
+                </FrameLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <com.myscript.nebo.banner.BannerLayout android:id="@id/main_view_banner" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <com.myscript.nebo.freemium.FreemiumBannerView android:id="@id/pages_counter_view" android:padding="8.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <com.myscript.nebo.freemium.RenewalOfferBannerView android:id="@id/renewal_offer_banner" android:padding="8.0dp" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <androidx.compose.ui.platform.ComposeView android:layout_gravity="end" android:id="@id/grid_sort_component" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" android:layout_marginEnd="8.0dp" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/folder_parent_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/main_empty_state" android:padding="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/main_empty_state_image" android:src="@drawable/ic_search" style="@style/GridEmptyState.Image" />
+                <TextView android:id="@id/main_empty_state_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GridEmptyState.Title" />
+                <TextView android:gravity="center" android:id="@id/main_empty_state_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/GridEmptyState.Subtitle" />
+            </LinearLayout>
+            <androidx.fragment.app.FragmentContainerView android:id="@id/folder_view_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/main_view_loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateTint="?colorOnBackground" android:indeterminateTintMode="src_in" android:backgroundTint="?colorOnBackground" style="?android:progressBarStyle" />
+            <androidx.compose.ui.platform.ComposeView android:id="@id/discoverability_tooltip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.myscript.android.utils.FloatingActionButtonMenu android:layout_gravity="end|bottom" android:id="@id/main_add_page_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_add" app:contextualMenu="@menu/grid_fab_menu" app:fabSize="normal" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/pre_rating_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

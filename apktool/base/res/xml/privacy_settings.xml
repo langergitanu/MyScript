@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/pref_privacy_policy" app:iconSpaceReserved="false" app:website_url="@string/pref_privacy_policy_url" />
+    <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_analytics_log_event_label" android:key="@string/pref_analytics_log_event_key" android:defaultValue="@bool/pref_analytics_log_event_default" android:summaryOn="@string/pref_analytics_log_event_true" android:summaryOff="@string/pref_analytics_log_event_false" app:iconSpaceReserved="false" />
+    <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_analytics_log_crash_label" android:key="@string/pref_analytics_log_crash_key" android:defaultValue="@bool/pref_analytics_log_crash_default" android:summaryOn="@string/pref_analytics_log_crash_summary_on" android:summaryOff="@string/pref_analytics_log_crash_summary_off" app:iconSpaceReserved="false" />
+    <SwitchPreferenceCompat android:enabled="true" android:title="@string/pref_share_notes_title" android:key="@string/pref_share_notes_key" android:defaultValue="@bool/pref_enable_share_notes_default" android:summaryOn="@string/pref_share_notes_summary" android:summaryOff="@string/pref_share_notes_summary" app:iconSpaceReserved="false" />
+</PreferenceScreen>

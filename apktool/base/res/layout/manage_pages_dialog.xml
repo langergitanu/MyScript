@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="?actionBarTheme" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="4.0dp" style="@style/Style.App.ActionBar">
+        <FrameLayout android:id="@id/manage_pages_dialog_fragment_toolbar_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.MaterialToolbar android:gravity="center_vertical" android:id="@id/manage_pages_dialog_fragment_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:navigationIcon="@drawable/ic_close" />
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.compose.ui.platform.ComposeView android:id="@id/manage_pages_dialog_compose" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>

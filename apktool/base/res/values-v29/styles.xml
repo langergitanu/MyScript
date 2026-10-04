@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.Nebo" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:preferenceCategoryStyle">@style/SettingsSectionTitle</item>
+        <item name="android:statusBarColor">@color/grid_status_bar</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.Nebo.BottomSheetDialog</item>
+        <item name="colorControlActivated">?colorPrimary</item>
+        <item name="colorError">#c53929</item>
+        <item name="colorOnPrimary">#ffffff</item>
+        <item name="colorOnSecondary">?colorOnPrimary</item>
+        <item name="colorPrimary">@color/brand_color</item>
+        <item name="colorPrimaryDark">@color/brand_color_dark</item>
+        <item name="colorSecondary">?colorPrimary</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MaterialComponents.Caption</item>
+        <item name="textAppearanceSubhead">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+        <item name="textInputStyle">@style/Widget.Design.TextInputLayout</item>
+    </style>
+    <style name="Base.Theme.SplashScreen" parent="@android:style/Theme.DeviceDefault.DayNight">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="isLightTheme">?android:isLightTheme</item>
+    </style>
+    <style name="Base.Theme.SplashScreen.Light" parent="@style/Base.Theme.SplashScreen" />
+    <style name="Theme.App.SplashScreen" parent="@style/Theme.SplashScreen">
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.Nebo</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="windowSplashScreenBackground">@color/splashscreen_background_color</item>
+    </style>
+</resources>

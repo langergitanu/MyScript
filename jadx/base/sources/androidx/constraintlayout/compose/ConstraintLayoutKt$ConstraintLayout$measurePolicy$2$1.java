@@ -1,0 +1,58 @@
+package androidx.constraintlayout.compose;
+
+import androidx.compose.p004ui.layout.Measurable;
+import androidx.compose.p004ui.layout.MeasurePolicy;
+import androidx.compose.p004ui.layout.MeasureResult;
+import androidx.compose.p004ui.layout.MeasureScope;
+import androidx.compose.p004ui.layout.Placeable;
+import androidx.compose.p004ui.unit.IntSize;
+import androidx.compose.runtime.MutableState;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+
+/* JADX INFO: compiled from: ConstraintLayout.kt */
+/* JADX INFO: loaded from: classes2.dex */
+@Metadata(m1598d1 = {"\u0000\u001e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0006\u001a\u00020\u0007H\n¢\u0006\u0004\b\b\u0010\t"}, m1599d2 = {"<anonymous>", "Landroidx/compose/ui/layout/MeasureResult;", "Landroidx/compose/ui/layout/MeasureScope;", "measurables", "", "Landroidx/compose/ui/layout/Measurable;", "constraints", "Landroidx/compose/ui/unit/Constraints;", "measure-3p2s80s", "(Landroidx/compose/ui/layout/MeasureScope;Ljava/util/List;J)Landroidx/compose/ui/layout/MeasureResult;"}, m1600k = 3, m1601mv = {1, 8, 0}, m1603xi = 176)
+public final class ConstraintLayoutKt$ConstraintLayout$measurePolicy$2$1 implements MeasurePolicy {
+    final /* synthetic */ ConstraintSet $constraintSet;
+    final /* synthetic */ MutableState<Unit> $contentTracker;
+    final /* synthetic */ Measurer $measurer;
+    final /* synthetic */ int $optimizationLevel;
+
+    public ConstraintLayoutKt$ConstraintLayout$measurePolicy$2$1(MutableState<Unit> mutableState, Measurer measurer, ConstraintSet constraintSet, int i) {
+        this.$contentTracker = mutableState;
+        this.$measurer = measurer;
+        this.$constraintSet = constraintSet;
+        this.$optimizationLevel = i;
+    }
+
+    @Override // androidx.compose.p004ui.layout.MeasurePolicy
+    /* JADX INFO: renamed from: measure-3p2s80s */
+    public final MeasureResult mo1747measure3p2s80s(MeasureScope measureScope, final List<? extends Measurable> list, long j) {
+        this.$contentTracker.getValue();
+        long jM11417performMeasure2eBlSMk = this.$measurer.m11417performMeasure2eBlSMk(j, measureScope.getLayoutDirection(), this.$constraintSet, list, this.$optimizationLevel);
+        int iM11188getWidthimpl = IntSize.m11188getWidthimpl(jM11417performMeasure2eBlSMk);
+        int iM11187getHeightimpl = IntSize.m11187getHeightimpl(jM11417performMeasure2eBlSMk);
+        final Measurer measurer = this.$measurer;
+        return MeasureScope.layout$default(measureScope, iM11188getWidthimpl, iM11187getHeightimpl, null, new Function1<Placeable.PlacementScope, Unit>() { // from class: androidx.constraintlayout.compose.ConstraintLayoutKt$ConstraintLayout$measurePolicy$2$1.1
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* JADX WARN: Multi-variable type inference failed */
+            {
+                super(1);
+            }
+
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Unit invoke(Placeable.PlacementScope placementScope) {
+                invoke2(placementScope);
+                return Unit.INSTANCE;
+            }
+
+            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            public final void invoke2(Placeable.PlacementScope placementScope) {
+                measurer.performLayout(placementScope, list);
+            }
+        }, 4, null);
+    }
+}

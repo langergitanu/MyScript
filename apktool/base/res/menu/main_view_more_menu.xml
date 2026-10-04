@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_search" android:id="@id/main_view_more_menu_search" android:orderInCategory="100" android:title="@string/app_more_menu_search" app:showAsAction="ifRoom" />
+    <item android:id="@id/main_view_more_menu_select" android:title="@string/app_more_menu_select" app:showAsAction="never" />
+    <item android:id="@id/main_view_more_menu_import" android:title="@string/app_more_menu_import" app:showAsAction="never" />
+    <item android:id="@id/main_view_more_menu_export" android:title="@string/app_more_menu_export" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_micro_powered_by_clickable_area" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/survicate_micro_touch_target_size" android:contentDescription="@string/survicate_micro_powered_by_content_description" android:layoutDirection="ltr" android:layout_marginStart="@dimen/survicate_micro_space_md" android:layout_marginEnd="@dimen/survicate_micro_space_md" android:layout_marginVertical="@dimen/survicate_micro_space_s" android:paddingHorizontal="@dimen/survicate_micro_space_xs">
+        <TextView android:id="@id/layout_micro_powered_by_survicate_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/survicate_micro_powered_by" android:importantForAccessibility="no" style="@style/Widget.Survicate.PoweredBy.Micro" />
+        <ImageView android:id="@id/layout_micro_powered_by_survicate_image" android:layout_width="wrap_content" android:layout_height="@dimen/survicate_micro_powered_by_height" android:src="@null" android:adjustViewBounds="true" android:importantForAccessibility="no" android:layout_marginStart="@dimen/survicate_micro_powered_by_spacing" />
+    </LinearLayout>
+</LinearLayout>

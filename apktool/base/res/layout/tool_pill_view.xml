@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.myscript.nebo.penpanel.ToolPillView android:layout_gravity="center_vertical" android:id="@id/tool_pill_view" android:background="@drawable/tool_background_selector" android:padding="@dimen/tool_inner_padding" android:visibility="gone" android:layout_width="@dimen/tool_button_size" android:layout_height="@dimen/tool_button_size" android:layout_margin="4.0dp" android:foreground="?actionBarItemBackground" android:tint="?android:textColorPrimary" android:backgroundTint="?colorControlHighlight"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

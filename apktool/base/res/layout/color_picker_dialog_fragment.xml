@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="16.0dp" android:clipChildren="false" android:layout_width="@dimen/cp_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="?actionBarTheme" android:orientation="vertical" android:layout_width="@dimen/cp_width" android:layout_height="wrap_content" android:elevation="0.0dp" app:elevation="0.0dp">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/color_picker_toolbar" android:layout_width="@dimen/cp_width" android:layout_height="?actionBarSize" app:menu="@menu/color_picker_menu" app:navigationIcon="@drawable/ic_arrow_back" app:title="@string/cp_color" style="@style/ThemeOverlay.App.Toolbar.Dialog" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/color_picker_layout" />
+</LinearLayout>

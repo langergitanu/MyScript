@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/side_panel_settings_text_display" android:key="@string/pref_text_display_category_key" android:summary="@string/side_panel_settings_text_display_desc" app:fragment="com.myscript.nebo.settings.TextDisplaySettingsFragment" app:iconSpaceReserved="false" app:showChildIndicator="true" />
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/pref_language_manager" android:key="@string/pref_language_manager_key" android:summary="@string/pref_language_manager_desc" app:iconSpaceReserved="false" app:showChildIndicator="true" />
+    <SwitchPreference android:title="@string/pref_conversion_preview_label" android:key="@string/pref_prompter_key" android:summary="@string/pref_conversion_preview_desc" android:defaultValue="@bool/pref_enable_prompter_default" app:iconSpaceReserved="false" />
+    <com.myscript.android.utils.preference.ButtonPreference android:title="@string/pref_restore_colors" android:key="@string/pref_restore_colors_key" app:iconSpaceReserved="false" />
+</PreferenceScreen>

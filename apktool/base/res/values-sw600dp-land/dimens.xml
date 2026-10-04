@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="accept_screen_section_logo_size">120.0dp</dimen>
+    <dimen name="pls_migration_illustration_height">240.0dp</dimen>
+    <dimen name="pls_migration_illustration_width">320.0dp</dimen>
+    <dimen name="pls_migration_margin_bottom">48.0dp</dimen>
+    <dimen name="pls_migration_margin_top">48.0dp</dimen>
+    <dimen name="pls_migration_text_max_width">540.0dp</dimen>
+</resources>

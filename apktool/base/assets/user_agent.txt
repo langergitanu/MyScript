@@ -1,0 +1,1 @@
+Nebo/7.4.3.17964 (branch nebo-7.4.x; PLATFORM_INFO) iink_sdk/0af4f82b585d20d7d24c3e891f4790e03d62ee46 (version 4.5.0) core_sdk/a13afaea4efc8a70584b5879bf3e3129ac653847 (version 8.13.0-2026-06-22-1920; branch iink-4.5.x)

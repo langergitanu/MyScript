@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="auto_sync_show_illustration">true</bool>
+    <bool name="backup_reminder_show_illustration">true</bool>
+    <bool name="pls_migration_show_illustration">true</bool>
+</resources>

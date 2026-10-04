@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/pref_interactivity_category_title_board">
+        <ListPreference android:entries="@array/pref_interactivity_strike_through_note_labels" android:title="@string/pref_interactivity_strike_through" android:key="@string/pref_interactivity_strike_through_note_key" android:defaultValue="@string/pref_interactivity_strike_through_default_value" android:entryValues="@array/pref_interactivity_strike_through_note_values" app:iconSpaceReserved="false" app:useSimpleSummaryProvider="true" />
+        <ListPreference android:entries="@array/pref_interactivity_underline_words_note_labels" android:title="@string/pref_interactivity_underline_words" android:key="@string/pref_interactivity_underline_words_note_key" android:defaultValue="@string/pref_interactivity_underline_words_default_value" android:entryValues="@array/pref_interactivity_underline_words_note_values" app:iconSpaceReserved="false" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/pref_interactivity_category_title_document">
+        <ListPreference android:entries="@array/pref_interactivity_strike_through_document_labels" android:title="@string/pref_interactivity_strike_through" android:key="@string/pref_interactivity_strike_through_document_key" android:defaultValue="@string/pref_interactivity_strike_through_default_value" android:entryValues="@array/pref_interactivity_strike_through_document_values" app:iconSpaceReserved="false" app:useSimpleSummaryProvider="true" />
+        <ListPreference android:entries="@array/pref_interactivity_underline_words_document_labels" android:title="@string/pref_interactivity_underline_words" android:key="@string/pref_interactivity_underline_words_document_key" android:defaultValue="@string/pref_interactivity_underline_words_default_value" android:entryValues="@array/pref_interactivity_underline_words_document_values" app:iconSpaceReserved="false" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="@string/pref_interactivity_category_title_pdf" app:iconSpaceReserved="false" app:title="@string/pref_interactivity_category_title_pdf">
+        <ListPreference android:entries="@array/pref_interactivity_strike_through_pdf_labels" android:title="@string/pref_interactivity_strike_through" android:key="@string/pref_interactivity_strike_through_pdf_key" android:defaultValue="@string/pref_interactivity_strike_through_default_value" android:entryValues="@array/pref_interactivity_strike_through_pdf_values" app:iconSpaceReserved="false" app:useSimpleSummaryProvider="true" />
+        <ListPreference android:entries="@array/pref_interactivity_underline_words_pdf_labels" android:title="@string/pref_interactivity_underline_words" android:key="@string/pref_interactivity_underline_words_pdf_key" android:defaultValue="@string/pref_interactivity_underline_words_default_value" android:entryValues="@array/pref_interactivity_underline_words_pdf_values" app:iconSpaceReserved="false" app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

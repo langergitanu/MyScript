@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/Widget.Survicate.LanguageOption.Text.Micro" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/item_micro_language_selector_lang_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="@dimen/survicate_micro_touch_target_size" android:minHeight="@dimen/survicate_micro_touch_target_size" android:maxLines="1" android:paddingHorizontal="@dimen/survicate_micro_space_s" android:paddingVertical="@dimen/survicate_micro_space_s"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

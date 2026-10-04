@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/grid_view_toolbar_actions" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <AutoCompleteTextView android:textSize="@dimen/text_size_20sp" android:id="@id/edittext_search" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="match_parent" android:maxLines="1" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionSearch">
+        <requestFocus />
+    </AutoCompleteTextView>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/action_search" android:background="?selectableItemBackground" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search" android:scaleType="center" android:foregroundTint="?colorControlNormal" style="@style/Widget.AppCompat.ActionButton" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/action_close_search" android:background="@drawable/toolbar_button_selector" android:focusable="true" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_clear" app:tint="?colorControlNormal" style="@style/Widget.AppCompat.ActionButton" />
+</LinearLayout>

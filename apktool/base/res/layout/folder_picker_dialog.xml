@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:colorBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="550.0dp" android:minHeight="450.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="?actionBarTheme" android:id="@id/folder_picker_dialog_toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:menu="@menu/notebook_picker_dialog_menu" app:navigationIcon="@drawable/ic_arrow_back" app:title="@string/notebook_picker_dialog_title" style="?toolbarStyle" />
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/folder_picker_list" android:visibility="visible" android:scrollbars="vertical" android:fadingEdgeLength="20.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" android:requiresFadingEdge="vertical" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/folder_picker_list_empty_state" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_margin="16.0dp" android:layout_weight="1.0">
+        <ImageView android:layout_width="96.0dp" android:layout_height="96.0dp" android:src="@drawable/ic_search" />
+        <TextView android:textAppearance="?textAppearanceSearchResultTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notebook_picker_empty_state_title" />
+        <TextView android:textAppearance="?textAppearanceSearchResultSubtitle" android:id="@id/folder_picker_list_empty_state_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/folder_picker_negative_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notebook_picker_action_cancel" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" style="?android:buttonBarButtonStyle" />
+        <Button android:enabled="false" android:id="@id/folder_picker_positive_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" style="?android:buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

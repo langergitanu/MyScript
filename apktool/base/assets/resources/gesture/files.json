@@ -1,0 +1,15 @@
+{
+  "formatVersion": "1.0",
+  "files": [
+    {
+    "relativePath": "gek-standard.res",
+    "md5": "a8d0e41578b48910ba27bda543a553d8",
+    "size": "1171577"
+    },
+    {
+    "relativePath": "../../conf/gesture.conf",
+    "md5": "bf959c10c68d1f3fd66462580df017c0",
+    "size": "177"
+    }
+  ]
+}

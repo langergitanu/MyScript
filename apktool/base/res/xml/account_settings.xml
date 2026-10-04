@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:key="@string/pref_account_sign_in_category_key" app:isPreferenceVisible="false">
+        <com.myscript.android.utils.preference.SummaryPreference android:icon="@drawable/ic_useroutline_48" android:title="@string/guest" />
+        <com.myscript.android.utils.preference.SummaryPreference android:summary="@string/pref_account_login_required" />
+        <com.myscript.android.utils.preference.ButtonPreference android:title="@string/sign_in" android:key="@string/pref_account_sign_in_key" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="@string/pref_account_pending_activation_category_key" app:isPreferenceVisible="false">
+        <com.myscript.android.utils.preference.SummaryPreference android:icon="@drawable/ic_useroutline_48" android:title="@string/pending" />
+        <com.myscript.android.utils.preference.SummaryPreference android:key="@string/pref_account_pending_activation_summary_key" />
+        <com.myscript.android.utils.preference.ButtonPreference android:title="@string/sso_resend_button" android:key="@string/pref_account_resend_key" />
+        <com.myscript.android.utils.preference.ButtonPreference android:title="@string/sign_out" android:key="@string/pref_account_pending_sign_out_key" app:titleColor="@color/color_sign_out" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="@string/pref_account_profile_category_key" app:isPreferenceVisible="false">
+        <Preference android:icon="@drawable/ic_userfull_48" android:title="@string/guest" android:key="@string/pref_account_profile_key" />
+        <com.myscript.android.utils.preference.ButtonPreference android:title="@string/sign_out" android:key="@string/pref_account_sign_out_key" app:titleColor="@color/color_sign_out" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_account_in_apps_category_title" android:key="@string/pref_account_entitlements_category_key" app:iconSpaceReserved="false" app:isPreferenceVisible="false">
+        <com.myscript.android.utils.preference.InAppPreference android:key="@string/pref_account_in_apps_freemium_key" app:iconSpaceReserved="false" app:inAppIcon="@drawable/ic_freemium_in_app_icon" app:inAppSubtitle="@string/pref_account_in_apps_freemium_subtitle" app:inAppTitle="@string/pref_account_in_apps_freemium_title" />
+        <com.myscript.android.utils.preference.SummaryPreference android:key="@string/pref_account_in_apps_freemium_summary_key" app:iconSpaceReserved="false" />
+        <com.myscript.android.utils.preference.SummaryPreference android:title="@string/pref_account_app_user_id_summary" android:key="@string/pref_account_app_user_id_summary_key" app:iconSpaceReserved="false" app:isPreferenceVisible="true" />
+        <com.myscript.android.utils.preference.ButtonPreference android:title="@string/pref_manage_subscription" android:key="@string/pref_account_entitlements_customer_center_key" />
+    </PreferenceCategory>
+</PreferenceScreen>

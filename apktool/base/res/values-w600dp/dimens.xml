@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pen_toolbar_divider_margin">8.0dp</dimen>
+    <dimen name="survicate_micro_input_height_comment_nested">108.0dp</dimen>
+    <dimen name="survicate_micro_question_legend_label_top_space">42.0dp</dimen>
+    <dimen name="survicate_micro_question_numerical_horizontal_item_size">60.0dp</dimen>
+    <dimen name="survicate_micro_question_smiley_scale_icon_size">56.0dp</dimen>
+    <dimen name="survicate_micro_question_smiley_scale_spacing_between_icons">13.0dp</dimen>
+    <dimen name="survicate_micro_question_smiley_scale_spacing_between_question_and_icons">38.0dp</dimen>
+</resources>

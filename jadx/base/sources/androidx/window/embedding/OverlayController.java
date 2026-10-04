@@ -1,0 +1,158 @@
+package androidx.window.embedding;
+
+import android.content.Context;
+import android.os.Bundle;
+import androidx.core.util.Consumer;
+import androidx.credentials.CredentialManager$$ExternalSyntheticLambda0;
+import androidx.media3.extractor.p007ts.TsExtractor;
+import androidx.window.embedding.OverlayController;
+import aws.sdk.kotlin.services.p010s3.express.S3ExpressDefaultChecksumAlgorithmKt;
+import com.revenuecat.purchases.p036ui.revenuecatui.components.webview.WebViewMessageType;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.JvmStatic;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.channels.ProduceKt;
+import kotlinx.coroutines.channels.ProducerScope;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.FlowKt;
+
+/* JADX INFO: compiled from: OverlayController.kt */
+/* JADX INFO: loaded from: classes3.dex */
+@Metadata(m1598d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0007\u0018\u0000 \u001a2\u00020\u0001:\u0001\u001aB\u0011\b\u0001\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u001d\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00072\u0006\u0010\t\u001a\u00020\nH\u0001¢\u0006\u0002\b\u000bJ\u001c\u0010\f\u001a\u00020\r2\u0012\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00110\u000fH\u0007J\b\u0010\u0012\u001a\u00020\rH\u0007J\u0018\u0010\u0013\u001a\u00020\r2\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0011H\u0007J\u0016\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00190\u00182\u0006\u0010\u0014\u001a\u00020\u0015H\u0007R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001b"}, m1599d2 = {"Landroidx/window/embedding/OverlayController;", "", S3ExpressDefaultChecksumAlgorithmKt.S3_EXPRESS_ENDPOINT_PROPERTY_KEY, "Landroidx/window/embedding/EmbeddingBackend;", "<init>", "(Landroidx/window/embedding/EmbeddingBackend;)V", "setOverlayCreateParams", "Landroid/os/Bundle;", "options", "overlayCreateParams", "Landroidx/window/embedding/OverlayCreateParams;", "setOverlayCreateParams$window_release", "setOverlayAttributesCalculator", "", "calculator", "Lkotlin/Function1;", "Landroidx/window/embedding/OverlayAttributesCalculatorParams;", "Landroidx/window/embedding/OverlayAttributes;", "clearOverlayAttributesCalculator", "updateOverlayAttributes", "overlayTag", "", "overlayAttributes", "overlayInfo", "Lkotlinx/coroutines/flow/Flow;", "Landroidx/window/embedding/OverlayInfo;", "Companion", "window_release"}, m1600k = 1, m1601mv = {2, 0, 0}, m1603xi = 48)
+public final class OverlayController {
+
+    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = new Companion(null);
+    public static final int OVERLAY_FEATURE_VERSION = 8;
+    private final EmbeddingBackend backend;
+
+    @JvmStatic
+    public static final OverlayController getInstance(Context context) {
+        return INSTANCE.getInstance(context);
+    }
+
+    public OverlayController(EmbeddingBackend backend) {
+        Intrinsics.checkNotNullParameter(backend, "backend");
+        this.backend = backend;
+    }
+
+    public final Bundle setOverlayCreateParams$window_release(Bundle options, OverlayCreateParams overlayCreateParams) {
+        Intrinsics.checkNotNullParameter(options, "options");
+        Intrinsics.checkNotNullParameter(overlayCreateParams, "overlayCreateParams");
+        return this.backend.setOverlayCreateParams(options, overlayCreateParams);
+    }
+
+    public final void setOverlayAttributesCalculator(Function1<? super OverlayAttributesCalculatorParams, OverlayAttributes> calculator) {
+        Intrinsics.checkNotNullParameter(calculator, "calculator");
+        this.backend.setOverlayAttributesCalculator(calculator);
+    }
+
+    public final void clearOverlayAttributesCalculator() {
+        this.backend.clearOverlayAttributesCalculator();
+    }
+
+    public final void updateOverlayAttributes(String overlayTag, OverlayAttributes overlayAttributes) {
+        Intrinsics.checkNotNullParameter(overlayTag, "overlayTag");
+        Intrinsics.checkNotNullParameter(overlayAttributes, "overlayAttributes");
+        this.backend.updateOverlayAttributes(overlayTag, overlayAttributes);
+    }
+
+    /* JADX INFO: renamed from: androidx.window.embedding.OverlayController$overlayInfo$1 */
+    /* JADX INFO: compiled from: OverlayController.kt */
+    @Metadata(m1598d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\b\u0012\u0004\u0012\u00020\u00030\u0002H\n"}, m1599d2 = {"<anonymous>", "", "Lkotlinx/coroutines/channels/ProducerScope;", "Landroidx/window/embedding/OverlayInfo;"}, m1600k = 3, m1601mv = {2, 0, 0}, m1603xi = 48)
+    @DebugMetadata(m1608c = "androidx.window.embedding.OverlayController$overlayInfo$1", m1609f = "OverlayController.kt", m1610i = {}, m1611l = {TsExtractor.TS_STREAM_TYPE_DTS_HD}, m1612m = "invokeSuspend", m1613n = {}, m1615s = {})
+    static final class C28921 extends SuspendLambda implements Function2<ProducerScope<? super OverlayInfo>, Continuation<? super Unit>, Object> {
+        final /* synthetic */ String $overlayTag;
+        private /* synthetic */ Object L$0;
+        int label;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        C28921(String str, Continuation<? super C28921> continuation) {
+            super(2, continuation);
+            this.$overlayTag = str;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+            C28921 c28921 = OverlayController.this.new C28921(this.$overlayTag, continuation);
+            c28921.L$0 = obj;
+            return c28921;
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(ProducerScope<? super OverlayInfo> producerScope, Continuation<? super Unit> continuation) {
+            return ((C28921) create(producerScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        public final Object invokeSuspend(Object obj) {
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                final ProducerScope producerScope = (ProducerScope) this.L$0;
+                final Consumer<OverlayInfo> consumer = new Consumer() { // from class: androidx.window.embedding.OverlayController$overlayInfo$1$$ExternalSyntheticLambda0
+                    @Override // androidx.core.util.Consumer
+                    public final void accept(Object obj2) {
+                        producerScope.mo16021trySendJP2dKIU((OverlayInfo) obj2);
+                    }
+                };
+                OverlayController.this.backend.addOverlayInfoCallback(this.$overlayTag, new CredentialManager$$ExternalSyntheticLambda0(), consumer);
+                final OverlayController overlayController = OverlayController.this;
+                this.label = 1;
+                if (ProduceKt.awaitClose(producerScope, new Function0() { // from class: androidx.window.embedding.OverlayController$overlayInfo$1$$ExternalSyntheticLambda1
+                    @Override // kotlin.jvm.functions.Function0
+                    public final Object invoke() {
+                        return OverlayController.C28921.invokeSuspend$lambda$1(overlayController, consumer);
+                    }
+                }, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } else {
+                if (i != 1) {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                ResultKt.throwOnFailure(obj);
+            }
+            return Unit.INSTANCE;
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final Unit invokeSuspend$lambda$1(OverlayController overlayController, Consumer consumer) {
+            overlayController.backend.removeOverlayInfoCallback(consumer);
+            return Unit.INSTANCE;
+        }
+    }
+
+    public final Flow<OverlayInfo> overlayInfo(String overlayTag) {
+        Intrinsics.checkNotNullParameter(overlayTag, "overlayTag");
+        return FlowKt.callbackFlow(new C28921(overlayTag, null));
+    }
+
+    /* JADX INFO: compiled from: OverlayController.kt */
+    @Metadata(m1598d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0010\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0007R\u000e\u0010\u0004\u001a\u00020\u0005X\u0080T¢\u0006\u0002\n\u0000¨\u0006\n"}, m1599d2 = {"Landroidx/window/embedding/OverlayController$Companion;", "", "<init>", "()V", "OVERLAY_FEATURE_VERSION", "", "getInstance", "Landroidx/window/embedding/OverlayController;", WebViewMessageType.CONTEXT, "Landroid/content/Context;", "window_release"}, m1600k = 1, m1601mv = {2, 0, 0}, m1603xi = 48)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
+
+        @JvmStatic
+        public final OverlayController getInstance(Context context) {
+            Intrinsics.checkNotNullParameter(context, "context");
+            return new OverlayController(EmbeddingBackend.INSTANCE.getInstance(context));
+        }
+    }
+}

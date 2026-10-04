@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="compact_ui">false</bool>
+    <bool name="isWideScreen">true</bool>
+    <bool name="side_panel_fullscreen">false</bool>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.myscript.android.utils.preference.SummaryPreference android:summary="@string/side_panel_settings_cpi_smartpen_list_link" app:iconSpaceReserved="false" />
+    <SwitchPreference android:title="@string/side_panel_settings_cpi_smartpen" android:key="@string/pref_cpi_smartpen_key" android:defaultValue="@bool/pref_enable_CPI_default" android:summaryOn="@string/side_panel_settings_cpi_smartpen_on_desc" android:summaryOff="@string/side_panel_settings_cpi_smartpen_off_desc" app:iconSpaceReserved="false" />
+    <com.myscript.nebo.settings.BadgesPreference android:title="@string/side_panel_settings_cpi_writingposition" android:key="@string/pref_cpi_writing_position_category_key" app:fragment="com.myscript.nebo.settings.WritingPositionSettingsFragment" app:iconSpaceReserved="false" app:isPreferenceVisible="@bool/enable_cpi_writing_position" app:showChildIndicator="true" />
+    <SwitchPreference android:title="@string/side_panel_settings_pen_haptic_feedback" android:key="@string/pref_pen_haptic_feedback_key" android:defaultValue="@bool/pref_enable_pen_haptic_feedback_default" android:summaryOn="@string/side_panel_settings_pen_haptic_feedback_on_desc" android:summaryOff="@string/side_panel_settings_pen_haptic_feedback_off_desc" app:iconSpaceReserved="false" app:isPreferenceVisible="@bool/enable_haptic_feedback_check" />
+</PreferenceScreen>

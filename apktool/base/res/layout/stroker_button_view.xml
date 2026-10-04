@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/stroker_text_color" android:gravity="center_horizontal" android:id="@id/stroker_button_view" android:background="@drawable/stroker_background" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:drawableTint="?android:textColorPrimary"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

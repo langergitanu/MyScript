@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/more_menu_math_approx" android:title="@string/pref_math_solver_approximation_label" />
+    <item android:id="@id/more_menu_math_degrad" android:title="@string/pref_math_solver_angle_unit_label" />
+    <item android:id="@id/more_menu_math_solver" android:title="@string/pref_solver_label" />
+</menu>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_language_item" android:background="@drawable/language_item_background" android:paddingTop="4.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:animateLayoutChanges="true" android:paddingStart="?listPreferredItemPaddingStart" android:paddingEnd="?listPreferredItemPaddingEnd"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceListItem" android:ellipsize="middle" android:layout_gravity="center" android:id="@id/txt_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/itemTextViewStyle" />
+        <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <ImageView android:id="@id/img_download" android:background="?selectableItemBackgroundBorderless" android:padding="@dimen/spacing_12dp" android:visibility="visible" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_download" />
+            <ImageView android:id="@id/img_update" android:background="?selectableItemBackgroundBorderless" android:padding="12.0dp" android:visibility="gone" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_refresh" />
+            <ImageView android:id="@id/img_remove" android:background="?selectableItemBackgroundBorderless" android:padding="12.0dp" android:visibility="gone" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_delete" />
+            <ImageView android:id="@id/img_check" android:background="?selectableItemBackgroundBorderless" android:padding="12.0dp" android:visibility="gone" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/ic_check" app:tint="?colorPrimary" />
+            <TextView android:ellipsize="middle" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/txt_downloading_summary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48.0dp" android:singleLine="true" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:id="@id/progress_group" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" style="?android:progressBarStyleHorizontal" />
+        <ImageView android:layout_gravity="center" android:id="@id/img_cancel" android:background="?selectableItemBackgroundBorderless" android:layout_width="48.0dp" android:layout_height="wrap_content" android:src="@drawable/ic_clear" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="survicate_micro_disclaimer_max_height_portrait">160.0dp</dimen>
+</resources>

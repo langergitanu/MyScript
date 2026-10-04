@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/editing_menu_group_primary_actions">
+        <item android:icon="@drawable/ic_undo" android:enabled="false" android:id="@id/editing_view_more_menu_undo" android:title="@string/app_more_menu_undo" app:showAsAction="ifRoom" />
+        <item android:icon="@drawable/ic_redo" android:enabled="false" android:id="@id/editing_view_more_menu_redo" android:title="@string/app_more_menu_redo" app:showAsAction="ifRoom" />
+        <item android:icon="@drawable/ic_add" android:enabled="false" android:id="@id/editing_view_more_menu_add" android:title="@string/app_more_menu_addblock" app:showAsAction="ifRoom">
+            <menu>
+                <group android:id="@id/toolbar_add_blocks" android:menuCategory="container">
+                    <item android:enabled="false" android:id="@id/toolbar_add_blocks_category" android:title="@string/editing_add_category_block" />
+                    <item android:icon="@drawable/ic_camera" android:id="@id/toolbar_add_block_camera" android:title="@string/action_camera" />
+                    <item android:icon="@drawable/ic_image" android:id="@id/toolbar_add_block_picture" android:title="@string/action_picture" />
+                    <item android:icon="@drawable/ic_2d_sketch" android:id="@id/toolbar_add_block_sketch" android:title="@string/action_sketch" />
+                    <item android:icon="@drawable/ic_2d_diagram" android:id="@id/toolbar_add_block_diagram" android:title="@string/action_diagram" />
+                    <item android:icon="@drawable/ic_2d_math" android:id="@id/toolbar_add_block_math" android:title="@string/action_math" />
+                </group>
+                <group android:id="@id/toolbar_add_sections" android:menuCategory="container">
+                    <item android:enabled="false" android:id="@id/toolbar_add_sections_category" android:title="@string/editing_add_category_section" />
+                    <item android:icon="@drawable/ic_2d_draft" android:id="@id/toolbar_add_section_draft" android:title="@string/action_section_draft" />
+                </group>
+            </menu>
+        </item>
+        <item android:icon="@drawable/ic_search" android:enabled="false" android:id="@id/editing_view_more_menu_search" android:title="@string/app_more_menu_search" app:actionViewClass="androidx.appcompat.widget.SearchView" app:showAsAction="ifRoom|collapseActionView" />
+    </group>
+    <group android:id="@id/editing_menu_group_document">
+        <item android:id="@id/editing_view_more_menu_configure_background" android:title="@string/app_more_menu_configure_background" app:showAsAction="never" />
+        <item android:id="@id/editing_update_page_title" android:title="@string/app_more_menu_rename_page" app:showAsAction="never" />
+        <item android:id="@id/editing_view_more_menu_typesetAll" android:title="@string/app_more_menu_convertAll" app:showAsAction="never" />
+        <item android:id="@id/editing_view_more_menu_clearAll" android:title="@string/app_more_menu_clearAll" app:showAsAction="never" />
+        <item android:id="@id/editing_view_more_menu_clear_all_annotations" android:title="@string/app_more_menu_clear_all_annotations" app:showAsAction="never" />
+        <item android:id="@id/editing_view_more_menu_pdf_optimization" android:visible="false" android:title="@string/app_more_menu_pdf_optimization" app:showAsAction="never" />
+    </group>
+    <group android:id="@id/editing_menu_group_sharing">
+        <item android:id="@id/editing_view_more_menu_export" android:title="@string/app_more_menu_export" app:showAsAction="never" />
+        <item android:id="@id/editing_view_more_menu_share_page" android:title="@string/app_more_menu_share_page" app:showAsAction="never" />
+    </group>
+    <group android:id="@id/editing_menu_group_preferences">
+        <item android:id="@id/editing_view_more_menu_toggle_conversion_preview" android:visible="false" android:title="@string/app_more_menu_enable_conversion_preview" app:showAsAction="never" />
+        <item android:id="@id/editing_view_more_menu_toggle_freeform_alignment_guides" android:title="@string/app_more_menu_enable_freeform_alignment_guides" app:showAsAction="never" />
+        <item android:id="@id/page_item_advanced_menu" android:title="@string/app_more_menu_advanced">
+            <menu>
+                <item android:id="@id/editing_view_more_menu_toggle_active_pen_mode" android:title="@string/app_more_menu_enable_active_pen_mode" app:showAsAction="never" />
+                <item android:id="@id/editing_view_more_menu_toggle_tap_keyboard" android:title="@string/app_more_menu_tap_for_keyboard" app:showAsAction="never" />
+            </menu>
+        </item>
+    </group>
+    <group android:id="@id/editing_menu_group_help">
+        <item android:id="@id/editing_view_more_menu_help" android:title="@string/app_more_menu_knowledge_base" app:showAsAction="never" />
+    </group>
+</menu>

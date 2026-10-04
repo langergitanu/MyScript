@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:id="@id/trashed_pages_app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/grid_toolbar_elevation" app:elevation="@dimen/grid_toolbar_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/trashed_pages_toolbar_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:gravity="center_vertical" android:id="@id/trashed_pages_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ThemeOverlay.App.Toolbar.Background" />
+    </FrameLayout>
+</com.google.android.material.appbar.AppBarLayout>

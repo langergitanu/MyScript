@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.myscript.nebo.penpanel.ColorPillView android:layout_gravity="center_vertical" android:id="@id/color_pill_view" android:padding="4.0dp" android:layout_width="36.0dp" android:layout_height="36.0dp" android:foregroundTint="@color/brightness_aware_color" app:cpv_borderTint="@color/secondaryBarPenPaletteBorder" app:cpv_borderWidth="1.0dp" app:cpv_checkDrawable="@drawable/ic_check_validation_animated" app:cpv_checkDrawableSize="16.0dp" />
+</FrameLayout>

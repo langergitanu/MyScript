@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.myscript.nebo.penpanel.InkTestView android:id="@id/test_ink_input" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textAppearance="?textAppearanceCaption" android:layout_gravity="center|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:layout_marginBottom="16.0dp" android:text="@string/test_here" />
+</FrameLayout>

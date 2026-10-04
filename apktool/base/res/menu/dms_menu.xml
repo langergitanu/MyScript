@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_add" android:enabled="true" android:id="@id/side_panel_add" android:title="@string/dms_menu_add" app:showAsAction="ifRoom">
+        <menu android:id="@id/side_panel_add_menu">
+            <item android:id="@id/dms_fab_more_menu_new_notebook" android:title="@string/dms_menu_new_folder" />
+            <item android:id="@id/dms_fab_more_menu_new_folder" android:title="@string/dms_menu_new_collection" />
+        </menu>
+    </item>
+    <item android:enabled="true" android:id="@id/side_panel_select" android:title="@string/dms_menu_select" app:showAsAction="never" />
+</menu>

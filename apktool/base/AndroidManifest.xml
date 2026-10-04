@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.myscript.nebo" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.ACTION_OPEN_DOCUMENT"/>
+            <category android:name="android.intent.category.OPENABLE"/>
+            <data android:scheme="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.ACTION_GET_CONTENT"/>
+            <category android:name="android.intent.category.OPENABLE"/>
+            <data android:scheme="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK"/>
+            <category android:name="android.intent.category.OPENABLE"/>
+            <data android:scheme="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+        </intent>
+        <package android:name="com.dropbox.android"/>
+        <package android:name="com.myscript.nebo.lenovo"/>
+        <package android:name="com.sec.android.app.samsungapps"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="text/html"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="@string/docx_mimetype"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="@string/pptx_mimetype"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/pdf"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="image/png"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="image/svg+xml"/>
+        </intent>
+        <package android:name="com.myscript.math"/>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <permission android:name="com.myscript.nebo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.myscript.nebo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="@bool/allow_backup" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:localeConfig="@xml/locales_config" android:name="com.myscript.nebo.NeboApplication" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="false" android:theme="@style/GridView">
+        <meta-data android:name="com.samsung.android.keepalive.density" android:value="true"/>
+        <meta-data android:name="firebase_data_collection_default_enabled" android:value="@bool/use_analytics"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="false"/>
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_ssaid_collection_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_default_allow_ad_personalization_signals" android:value="false"/>
+        <activity android:exported="true" android:label="@string/app_name" android:name="com.myscript.nebo.LaunchActivity" android:theme="@style/Theme.App.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="@string/host"/>
+                <data android:mimeType="@string/pdf_mimetype"/>
+                <data android:mimeType="@string/docx_mimetype"/>
+                <data android:mimeType="@string/google_doc_mimetype"/>
+                <data android:mimeType="@string/pptx_mimetype"/>
+                <data android:mimeType="@string/google_sheet_mimetype"/>
+                <data android:scheme="@string/file_scheme"/>
+                <data android:scheme="@string/content_scheme"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:mimeType="@string/pdf_mimetype"/>
+                <data android:mimeType="@string/docx_mimetype"/>
+                <data android:mimeType="@string/google_doc_mimetype"/>
+                <data android:mimeType="@string/pptx_mimetype"/>
+                <data android:mimeType="@string/google_sheet_mimetype"/>
+                <data android:host="@string/host"/>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="WindowManagerPreference:SuppressWindowControlNavigationButton" android:value="true"/>
+        </activity>
+        <activity android:name="com.myscript.nebo.init.InitContentActivity" android:theme="@style/OnBoardingTheme">
+            <meta-data android:name="WindowManagerPreference:SuppressWindowControlNavigationButton" android:value="true"/>
+        </activity>
+        <activity android:name="com.myscript.nebo.whatsnew.PLSMigrationActivity" android:theme="@style/WhatsNewTheme">
+            <meta-data android:name="WindowManagerPreference:SuppressWindowControlNavigationButton" android:value="true"/>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.myscript.nebo.grid.MainActivity">
+            <meta-data android:name="WindowManagerPreference:SuppressWindowControlNavigationButton" android:value="true"/>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.myscript.nebo.editing.EditingActivity" android:parentActivityName="com.myscript.nebo.grid.MainActivity" android:theme="@style/Editing" android:windowSoftInputMode="adjustNothing">
+            <meta-data android:name="WindowManagerPreference:SuppressWindowControlNavigationButton" android:value="true"/>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.myscript.nebo.about.CreditsActivity" android:theme="@style/SettingsTheme">
+            <meta-data android:name="WindowManagerPreference:SuppressWindowControlNavigationButton" android:value="true"/>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.myscript.nebo.about.CreditDetailActivity" android:parentActivityName="com.myscript.nebo.about.CreditsActivity" android:theme="@style/SettingsTheme">
+            <meta-data android:name="WindowManagerPreference:SuppressWindowControlNavigationButton" android:value="true"/>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.myscript.nebo.about.EULAActivity" android:theme="@style/SettingsTheme">
+            <meta-data android:name="WindowManagerPreference:SuppressWindowControlNavigationButton" android:value="true"/>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:exported="true" android:label="@string/login_activity_name" android:launchMode="singleTop" android:name="com.myscript.nebo.sso.ui.login.LoginActivity" android:theme="@style/Theme.AppCompat.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="myscript.app" android:scheme="myscriptnotes"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/login_activity_name" android:name="com.myscript.nebo.sso.ui.login.FallbackLoginActivity" android:theme="@style/OnBoardingTheme" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="WindowManagerPreference:SuppressWindowControlNavigationButton" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.myscript.nebo.organization.ui.MandatoryLoginActivity" android:theme="@style/OnBoardingTheme" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="WindowManagerPreference:SuppressWindowControlNavigationButton" android:value="true"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.myscript.nebo.sso.ui.UpdatePrivacyPolicyActivity" android:theme="@style/OnBoardingTheme" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="WindowManagerPreference:SuppressWindowControlNavigationButton" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboard|orientation" android:exported="true" android:launchMode="singleTask" android:name="com.dropbox.core.android.AuthActivity">
+            <intent-filter>
+                <data android:scheme="@string/dropbox_auth_filter_scheme"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="WindowManagerPreference:SuppressWindowControlNavigationButton" android:value="true"/>
+        </activity>
+        <activity android:name="com.myscript.nebo.framework.rule.FragmentRule$EmptyFragmentContainerActivity" android:theme="@style/Editing"/>
+        <provider android:authorities="com.myscript.nebo.file" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <provider android:authorities="com.myscript.nebo.clipboard" android:exported="true" android:grantUriPermissions="true" android:name="com.myscript.nebo.clipboard.NeboClipboardContentProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <uses-library android:name="com.sec.android.app.multiwindow" android:required="false"/>
+        <meta-data android:name="com.sec.android.support.multiwindow" android:value="true"/>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W" android:value="200.0dip"/>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H" android:value="200.0dip"/>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W" android:value="30.0dip"/>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H" android:value="30.0dip"/>
+        <meta-data android:name="WindowManagerPreference:FreeformWindowSize" android:value="maximize"/>
+        <meta-data android:name="WindowManagerPreference:FreeformWindowOrientation" android:value="landscape"/>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="photopicker_activity:0:required" android:value=""/>
+        </service>
+        <activity android:label="Nebo Inspector" android:launchMode="singleTask" android:name="com.myscript.nebo.inspector.NeboInspectorActivity" android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"/>
+        <activity android:exported="false" android:name="com.revenuecat.purchases.ui.revenuecatui.activity.PaywallActivity"/>
+        <activity android:exported="false" android:name="com.revenuecat.purchases.ui.revenuecatui.customercenter.CustomerCenterActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:exported="false" android:name="com.revenuecat.purchases.ui.revenuecatui.checkpoints.CheckpointWorkflowActivity"/>
+        <activity android:name="com.survicate.surveys.SurveyActivity" android:theme="@style/Theme.Survey" android:windowSoftInputMode="adjustResize"/>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.controllers.identityauth.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.controllers.identitycredentials.IdentityCredentialApiHiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.revenuecat.purchases.amazon.purchasing.ProxyAmazonBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:name="com.revenuecat.purchases.SimulatedStoreErrorDialogActivity" android:theme="@android:style/Theme.Material.Dialog.Alert"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="8.3.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:enabled="false" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.myscript.nebo.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.myscript.nebo.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="okhttp3.internal.platform.PlatformInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <provider android:authorities="com.myscript.nebo.pdftron-pdfnet" android:exported="false" android:name="com.pdftron.pdfnet.PDFNetInitializer"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

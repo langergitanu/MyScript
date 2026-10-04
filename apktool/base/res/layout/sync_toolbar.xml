@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/view_dms_navigation_sync_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" />
+        <TextView android:textSize="10.0sp" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/view_dms_navigation_sync_duration" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\@{@string/sync_details_duration(3)}" android:maxLines="1" android:lines="1" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceButton" android:textColor="?android:colorAccent" android:layout_gravity="end|center" android:id="@id/view_dms_navigation_right_button" android:background="?selectableItemBackground" android:padding="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="0.0dp" android:textAlignment="center" android:layout_marginEnd="5.0dp" app:drawableTint="?android:textColorSecondary" />
+    <ProgressBar android:layout_gravity="bottom" android:id="@id/view_dms_navigation_sync_progress" android:layout_width="match_parent" android:layout_height="3.0dp" android:max="100" android:indeterminate="false" style="?android:progressBarStyleHorizontal" />
+</FrameLayout>

@@ -1,0 +1,102 @@
+package androidx.compose.material3;
+
+import androidx.compose.p004ui.layout.Measurable;
+import androidx.compose.p004ui.layout.MeasurePolicy;
+import androidx.compose.p004ui.layout.MeasureResult;
+import androidx.compose.p004ui.layout.MeasureScope;
+import androidx.compose.p004ui.layout.Placeable;
+import androidx.compose.p004ui.unit.Constraints;
+import androidx.compose.p004ui.unit.ConstraintsKt;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Ref;
+import kotlin.ranges.RangesKt;
+
+/* JADX INFO: compiled from: ShortNavigationBar.kt */
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(m1598d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0002\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003J)\u0010\u0004\u001a\u00020\u0005*\u00020\u00062\f\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\b2\u0006\u0010\n\u001a\u00020\u000bH\u0016¢\u0006\u0004\b\f\u0010\r¨\u0006\u000e"}, m1599d2 = {"Landroidx/compose/material3/CenteredContentMeasurePolicy;", "Landroidx/compose/ui/layout/MeasurePolicy;", "<init>", "()V", "measure", "Landroidx/compose/ui/layout/MeasureResult;", "Landroidx/compose/ui/layout/MeasureScope;", "measurables", "", "Landroidx/compose/ui/layout/Measurable;", "constraints", "Landroidx/compose/ui/unit/Constraints;", "measure-3p2s80s", "(Landroidx/compose/ui/layout/MeasureScope;Ljava/util/List;J)Landroidx/compose/ui/layout/MeasureResult;", "material3"}, m1600k = 1, m1601mv = {2, 0, 0}, m1603xi = 48)
+final class CenteredContentMeasurePolicy implements MeasurePolicy {
+    @Override // androidx.compose.p004ui.layout.MeasurePolicy
+    /* JADX INFO: renamed from: measure-3p2s80s */
+    public MeasureResult mo1747measure3p2s80s(MeasureScope measureScope, List<? extends Measurable> list, long j) {
+        final ArrayList arrayList;
+        int iCoerceAtMost;
+        int iM10970getMaxWidthimpl = Constraints.m10970getMaxWidthimpl(j);
+        int iM10971getMinHeightimpl = Constraints.m10971getMinHeightimpl(j);
+        int size = list.size();
+        if (size < 1) {
+            return MeasureScope.layout$default(measureScope, iM10970getMaxWidthimpl, iM10971getMinHeightimpl, null, new Function1() { // from class: androidx.compose.material3.CenteredContentMeasurePolicy$$ExternalSyntheticLambda0
+                @Override // kotlin.jvm.functions.Function1
+                public final Object invoke(Object obj) {
+                    return CenteredContentMeasurePolicy.measure_3p2s80s$lambda$0((Placeable.PlacementScope) obj);
+                }
+            }, 4, null);
+        }
+        final Ref.IntRef intRef = new Ref.IntRef();
+        int i = 0;
+        if (Constraints.m10966getHasBoundedWidthimpl(j)) {
+            int i2 = iM10970getMaxWidthimpl / size;
+            intRef.element = ShortNavigationBarKt.calculateCenteredContentHorizontalPadding(size, iM10970getMaxWidthimpl);
+            int i3 = (iM10970getMaxWidthimpl - (intRef.element * 2)) / size;
+            List<? extends Measurable> list2 = list;
+            int size2 = list2.size();
+            for (int i4 = 0; i4 < size2; i4++) {
+                int iMaxIntrinsicHeight = list.get(i4).maxIntrinsicHeight(i3);
+                if (iM10971getMinHeightimpl < iMaxIntrinsicHeight) {
+                    iM10971getMinHeightimpl = RangesKt.coerceAtMost(iMaxIntrinsicHeight, Constraints.m10969getMaxHeightimpl(j));
+                }
+            }
+            ArrayList arrayList2 = new ArrayList(list.size());
+            int size3 = list2.size();
+            while (i < size3) {
+                ArrayList arrayList3 = arrayList2;
+                Measurable measurable = list.get(i);
+                int iMaxIntrinsicWidth = measurable.maxIntrinsicWidth(Constraints.m10971getMinHeightimpl(j));
+                if (i3 < iMaxIntrinsicWidth) {
+                    iCoerceAtMost = RangesKt.coerceAtMost(iMaxIntrinsicWidth, i2);
+                    intRef.element -= (iCoerceAtMost - i3) / 2;
+                } else {
+                    iCoerceAtMost = i3;
+                }
+                arrayList3.add(measurable.mo9625measureBRTryo0(ConstraintsKt.m10985constrainN9IONVI(j, Constraints.INSTANCE.m10980fixedJhjzzOo(iCoerceAtMost, iM10971getMinHeightimpl))));
+                i++;
+            }
+            arrayList = arrayList2;
+        } else {
+            ArrayList arrayList4 = new ArrayList(list.size());
+            int size4 = list.size();
+            while (i < size4) {
+                arrayList4.add(list.get(i).mo9625measureBRTryo0(ConstraintsKt.m10985constrainN9IONVI(j, Constraints.INSTANCE.m10981fixedHeightOenEA2s(iM10971getMinHeightimpl))));
+                i++;
+            }
+            arrayList = arrayList4;
+        }
+        return MeasureScope.layout$default(measureScope, iM10970getMaxWidthimpl, iM10971getMinHeightimpl, null, new Function1() { // from class: androidx.compose.material3.CenteredContentMeasurePolicy$$ExternalSyntheticLambda1
+            @Override // kotlin.jvm.functions.Function1
+            public final Object invoke(Object obj) {
+                return CenteredContentMeasurePolicy.measure_3p2s80s$lambda$5(intRef, arrayList, (Placeable.PlacementScope) obj);
+            }
+        }, 4, null);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit measure_3p2s80s$lambda$0(Placeable.PlacementScope placementScope) {
+        return Unit.INSTANCE;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit measure_3p2s80s$lambda$5(Ref.IntRef intRef, List list, Placeable.PlacementScope placementScope) {
+        int i = intRef.element;
+        int size = list.size();
+        int width = i;
+        for (int i2 = 0; i2 < size; i2++) {
+            Placeable placeable = (Placeable) list.get(i2);
+            Placeable.PlacementScope.placeRelative$default(placementScope, placeable, width, 0, 0.0f, 4, null);
+            width += placeable.getWidth();
+        }
+        return Unit.INSTANCE;
+    }
+}

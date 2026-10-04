@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/view_micro_dots_progress_bar_dot_left" android:layout_width="@dimen/survicate_micro_dots_progress_bar_dot_size" android:layout_height="@dimen/survicate_micro_dots_progress_bar_dot_size" android:src="@drawable/survicate_micro_progress_bar_dot" android:importantForAccessibility="no" android:layout_marginEnd="2.0dp" />
+    <ImageView android:id="@id/view_micro_dots_progress_bar_dot_center" android:layout_width="@dimen/survicate_micro_dots_progress_bar_dot_size" android:layout_height="@dimen/survicate_micro_dots_progress_bar_dot_size" android:src="@drawable/survicate_micro_progress_bar_dot" android:importantForAccessibility="no" />
+    <ImageView android:id="@id/view_micro_dots_progress_bar_dot_right" android:layout_width="@dimen/survicate_micro_dots_progress_bar_dot_size" android:layout_height="@dimen/survicate_micro_dots_progress_bar_dot_size" android:src="@drawable/survicate_micro_progress_bar_dot" android:importantForAccessibility="no" android:layout_marginStart="2.0dp" />
+</LinearLayout>

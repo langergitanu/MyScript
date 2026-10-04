@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="survicate_micro_question_shape_horizontal_image_size">45.0dp</dimen>
+    <dimen name="survicate_micro_question_shape_horizontal_item_spacing">7.0dp</dimen>
+</resources>

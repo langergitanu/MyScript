@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference android:icon="@mipmap/ic_launcher" android:title="@string/about_app_name" android:key="@string/pref_help_nebo_header_key" />
+    <PreferenceCategory android:title="@string/help_section_learn" app:iconSpaceReserved="false">
+        <com.myscript.nebo.settings.BadgesPreference android:title="@string/freeform_tutorial_board_title" android:key="@string/pref_help_draft_tutorial_key" app:iconSpaceReserved="false" />
+        <com.myscript.nebo.settings.BadgesPreference android:title="@string/pdf_tutorial_title" android:key="@string/pref_help_pdf_tutorial_key" app:iconSpaceReserved="false" />
+        <com.myscript.nebo.settings.BadgesPreference android:title="@string/page_tutorial_title" android:key="@string/pref_help_page_tutorial_key" app:iconSpaceReserved="false" />
+        <com.myscript.nebo.settings.BadgesPreference android:title="@string/keyboard_tutorial_title" android:key="@string/pref_help_keyboard_tutorial_key" app:iconSpaceReserved="false" />
+        <com.myscript.nebo.settings.BadgesPreference android:title="@string/knowledge_base" app:iconSpaceReserved="false" app:website_url="@string/help_knowledge_base_url" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/help_section_contact" app:iconSpaceReserved="false">
+        <com.myscript.nebo.settings.BadgesPreference android:title="@string/share_feedback" android:key="@string/pref_help_share_feedback_key" app:iconSpaceReserved="false" />
+        <com.myscript.nebo.settings.BadgesPreference android:title="@string/faq" app:iconSpaceReserved="false" app:website_url="@string/help_support_url" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/help_section_about" app:iconSpaceReserved="false">
+        <com.myscript.nebo.settings.BadgesPreference android:title="@string/about_website" app:iconSpaceReserved="false" app:website_url="@string/nebo_website_url" />
+        <com.myscript.nebo.settings.BadgesPreference android:title="@string/about_instagram" app:iconSpaceReserved="false" app:website_url="@string/nebo_instagram_url" />
+        <com.myscript.nebo.settings.BadgesPreference android:title="@string/about_youtube" app:iconSpaceReserved="false" app:website_url="@string/nebo_youtube_url" />
+        <com.myscript.nebo.settings.BadgesPreference android:title="@string/about_facebook" app:iconSpaceReserved="false" app:website_url="@string/nebo_facebook_url" />
+        <com.myscript.nebo.settings.BadgesPreference android:title="@string/about_twitter" app:iconSpaceReserved="false" app:website_url="@string/nebo_twitter_url" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/help_section_legal" app:iconSpaceReserved="false">
+        <com.myscript.nebo.settings.BadgesPreference android:title="@string/about_credits" android:key="@string/pref_help_credits_key" app:iconSpaceReserved="false" />
+        <com.myscript.nebo.settings.BadgesPreference android:title="@string/about_license" android:key="@string/pref_help_licence_key" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <com.myscript.nebo.settings.AboutFooterPreference android:enabled="false" app:allowDividerAbove="true" />
+</PreferenceScreen>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Layout" app:iconSpaceReserved="false">
+        <SwitchPreference android:title="Layout Grid" android:key="@string/showLayoutGridPreferenceKey" android:summary="Show grid columns and gutters." android:defaultValue="false" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Various" app:iconSpaceReserved="false">
+        <SwitchPreference android:title="Enable recovery" android:key="@string/enable_recovery_key" android:summary="Recovery will tag your document as corrupted if the same document crashes more than twice." android:defaultValue="true" app:iconSpaceReserved="false" />
+        <SwitchPreference android:title="SDK User Object Count" android:key="@string/showUOCPreferecensKey" android:summary="Show SDK's user objects currently alive." android:defaultValue="true" app:iconSpaceReserved="false" />
+        <SwitchPreference android:title="Device Information" android:key="@string/showDeviceInformationPreferenceKey" android:summary="Show Device information (DPI, …)." android:defaultValue="false" app:iconSpaceReserved="false" />
+        <SwitchPreference android:title="Notebook Information" android:key="@string/showNotebookInformationPreferenceKey" android:summary="Show notebook information (collection, name, page index, page id, …)." android:defaultValue="false" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/title_internal_low_storage" app:iconSpaceReserved="false">
+        <SwitchPreference android:title="@string/pref_internal_low_storage_dialing_title" android:key="@string/pref_internal_low_storage_dialing_key" android:summary="@string/pref_internal_low_storage_dialing_explanation" android:defaultValue="false" app:iconSpaceReserved="false" />
+        <SeekBarPreference android:max="32000" android:title="@string/title_internal_low_storage_critical_threshold" android:key="@string/pref_internal_low_storage_critical_threshold" app:iconSpaceReserved="false" app:min="100" app:showSeekBarValue="true" />
+        <SeekBarPreference android:max="64000" android:title="@string/title_internal_low_storage_low_threshold" android:key="@string/pref_internal_low_storage_low_threshold" app:iconSpaceReserved="false" app:min="1000" app:showSeekBarValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/title_internal_tooltips" app:iconSpaceReserved="false">
+        <com.myscript.android.utils.preference.ButtonPreference android:title="@string/title_internal_reset_tooltips" android:key="@string/pref_internal_reset_tooltips" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

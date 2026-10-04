@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_ios_share" android:id="@id/page_export" android:orderInCategory="100" android:title="@string/app_more_menu_export" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_folder_move" android:id="@id/page_move_selection" android:orderInCategory="100" android:title="@string/app_more_menu_move" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_delete_outline" android:id="@id/page_delete_selection" android:orderInCategory="100" android:title="@string/app_more_menu_delete" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_edit_outline" android:id="@id/page_edit" android:orderInCategory="100" android:title="@string/page_menu_edit" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_duplicate" android:id="@id/page_duplicate" android:orderInCategory="100" android:title="@string/page_menu_duplicate" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_share" android:id="@id/page_share" android:visible="@bool/enable_share_page_grid" android:orderInCategory="100" android:title="@string/app_more_menu_share_page" app:showAsAction="never" />
+    <item android:id="@id/page_select_all" android:orderInCategory="100" android:title="@string/page_menu_select_all" app:showAsAction="never" />
+    <item android:id="@id/page_unselect_all" android:orderInCategory="100" android:title="@string/page_menu_clear" app:showAsAction="never" />
+</menu>

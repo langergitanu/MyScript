@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_share_outlined" android:id="@id/inspector_files_share_info" android:title="@string/inspector_files_share_info" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_library_add_all_outlined" android:id="@id/inspector_files_restore" android:title="@string/inspector_files_restore" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_delete_all" android:id="@id/inspector_files_clear_all" android:title="@string/inspector_files_clear_all" app:showAsAction="never" />
+    <item android:id="@id/inspector_sync_export_datalog" android:title="@string/inspector_sync_export_datalog" app:showAsAction="never" />
+    <item android:id="@id/inspector_sync_dump_v1" android:title="@string/inspector_sync_dump_v1" app:showAsAction="never" />
+    <item android:id="@id/inspector_sync_export_cloud_operations_log" android:title="@string/inspector_sync_export_cloud_operations_log" app:showAsAction="never" />
+</menu>

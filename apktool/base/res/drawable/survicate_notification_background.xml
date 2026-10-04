@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/survicate_notification_background" />
+    <corners android:radius="@dimen/survicate_micro_notification_background_corner_radius" />
+</shape>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_gravity="start|bottom" android:id="@id/zoom_feedback_widget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="24.0dp" app:cardElevation="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@id/zoom_feedback_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?borderlessButtonStyle" />
+        <com.google.android.material.divider.MaterialDivider android:id="@id/zoom_feedback_divider" android:layout_width="0.5dp" android:layout_height="match_parent" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/zoom_feedback_lock_toggle" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:backgroundTint="@color/lock_background_color">
+            <ImageView android:id="@id/zoom_feedback_lock_icon" android:padding="12.0dp" android:clickable="false" android:duplicateParentState="true" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/lock_icon_state" app:tint="@color/lock_foreground_color" />
+            <TextView android:textColor="?colorOnPrimary" android:id="@id/zoom_feedback_lock_notif" android:paddingRight="24.0dp" android:visibility="gone" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zoom_is_locked_label" style="?borderlessButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

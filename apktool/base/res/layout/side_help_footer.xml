@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/about_pwrd_iink" android:padding="@dimen/spacing_12dp" android:layout_width="match_parent" android:layout_height="@dimen/logo_ink_height" android:src="@drawable/powered_by_iink_artwork" />
+    <TextView android:textAppearance="?textAppearanceCaption" android:textColor="?android:textColorPrimary" android:gravity="center" android:id="@id/txt_copyright" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/about_copyright" android:fontFamily="sans-serif-condensed" />
+</LinearLayout>

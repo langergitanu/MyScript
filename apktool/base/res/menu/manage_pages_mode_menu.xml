@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_delete_outline" android:id="@id/manage_pages_delete" android:title="@string/manage_pages_delete" app:showAsAction="ifRoom" />
+    <group android:id="@id/manage_pages_menu_group_selection">
+        <item android:id="@id/manage_pages_select_all" android:title="@string/manage_pages_select_all" app:showAsAction="never" />
+        <item android:id="@id/manage_pages_deselect_all" android:title="@string/manage_pages_deselect_all" app:showAsAction="never" />
+    </group>
+    <group android:id="@id/manage_pages_menu_group_sharing">
+        <item android:icon="@drawable/ic_ios_share" android:id="@id/editing_view_more_menu_export" android:title="@string/app_more_menu_export" app:showAsAction="ifRoom" />
+    </group>
+    <group android:id="@id/manage_pages_menu_group_ai_summarize">
+        <item android:id="@id/editing_view_more_menu_ai_summarize" android:title="@string/ai_summarize_title" app:showAsAction="ifRoom" />
+    </group>
+    <group android:id="@id/manage_pages_menu_group_ai_quiz">
+        <item android:id="@id/editing_view_more_menu_ai_quiz" android:title="@string/ai_quizz" app:showAsAction="ifRoom" />
+    </group>
+</menu>

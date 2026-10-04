@@ -1,0 +1,6 @@
+version: 3.0.2
+apkFileName: split_config.arm64_v8a.apk
+versionInfo:
+  versionCode: 179641
+doNotCompress:
+- so
